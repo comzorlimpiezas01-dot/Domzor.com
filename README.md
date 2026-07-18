@@ -1,17 +1,11 @@
-# DOMZOR Website v2
+# DOMZOR Website v3
 
-Ready for GitHub Pages at **domzor.com**.
+Versión autocontenida: logo, imágenes, estilos y JavaScript están incluidos dentro de `index.html`.
 
-## Upload
-Upload the contents of this folder to the root of the GitHub repository. Keep the `assets` folder intact. Do not upload only the ZIP.
+## Publicar en GitHub Pages
+1. Reemplaza el `index.html` existente por este archivo.
+2. Conserva o sube `CNAME`.
+3. Haz Commit changes.
+4. Espera a que Pages muestre el check verde.
 
-## Included
-- Consistent DOMZOR logo in header, hero, footer, and favicon
-- Responsive mobile design
-- Local hero and gallery images
-- Services, benefits, gallery, testimonials, estimate form, map, call and WhatsApp buttons
-- Estimate form sends the completed request through WhatsApp
-- `CNAME` configured for `domzor.com`
-
-## Important
-Gallery images and testimonials are samples. Replace them with verified DOMZOR customer work and reviews before presenting them as real results.
+No necesita carpeta `assets` para funcionar.
