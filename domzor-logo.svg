@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 150" role="img" aria-labelledby="title desc">
+<title id="title">DOMZOR Cleaning &amp; Restoration</title>
+<desc id="desc">A navy house roof above the DOMZOR name with green sparkle accents.</desc>
+<rect width="520" height="150" fill="none"/>
+<g transform="translate(14 8)">
+  <path d="M35 58 L105 10 L158 47 L158 25 L184 25 L184 66 L215 88 H181 L105 36 L63 65 L63 91 H35 Z" fill="#073763"/>
+  <path d="M90 59 h30 v30 h-30z" fill="#ffffff"/>
+  <path d="M104 59 v30 M90 74 h30" stroke="#073763" stroke-width="5"/>
+  <g fill="#6BBE2D">
+    <path d="M225 15 l6 14 14 6-14 6-6 14-6-14-14-6 14-6z"/>
+    <path d="M253 38 l4 9 9 4-9 4-4 9-4-9-9-4 9-4z"/>
+  </g>
+  <text x="0" y="122" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="800" letter-spacing="1" fill="#073763">DOMZOR</text>
+  <text x="7" y="145" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="4" fill="#6BBE2D">CLEANING &amp; RESTORATION</text>
+</g>
+</svg>
