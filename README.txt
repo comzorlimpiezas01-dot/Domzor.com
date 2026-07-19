@@ -1,13 +1,22 @@
-DOMZOR FINAL LOGOS
+DOMZOR BILINGUAL UPDATE
 
-Files:
-- domzor-logo.svg: use on white or light backgrounds.
-- domzor-logo-white.svg: use over the dark hero image.
+Upload these files to the ROOT of your GitHub repository and replace the current versions:
+- index.html
+- style.css
+- app.js
+- domzor-logo.svg
+- domzor-logo-white.svg
 
-Both files:
-- have transparent backgrounds
-- use the same proportions
-- are vector SVG files
-- are sized to avoid changing the existing page layout
+The website expects these existing image files in the repository root:
+- hero-worker.jpg
+- result-1.jpg
+- result-2.jpg
+- result-3.jpg
+- favicon.svg
 
-Upload both files to the ROOT of the GitHub repository and replace the existing files with the same names.
+Features:
+- English / Español selector inside the menu
+- Remembers the selected language
+- Detects Spanish browser language on first visit
+- Translates navigation, services, gallery, reviews, contact details and estimate form
+- Estimate form opens WhatsApp with the completed request
