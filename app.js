@@ -101,8 +101,3 @@ if (form) {
     window.open(`https://wa.me/13127784975?text=${encodeURIComponent(message)}`, "_blank", "noopener");
   });
 }
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/service-worker.js");
-  });
-}
