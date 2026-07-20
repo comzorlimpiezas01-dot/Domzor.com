@@ -30,14 +30,14 @@ img{max-width:100%;display:block} a{color:inherit} button,input,select,textarea{
 @media(max-width:760px){.header-inner{min-height:72px}.brand{flex-basis:180px}.brand img{width:175px}.header-actions .btn{display:none}.hero{min-height:640px;background-position:64% center}.hero-content{padding-block:82px;margin-left:auto}.hero-logo{width:280px}.service-grid,.gallery-grid,.testimonial-grid{grid-template-columns:1fr}.benefit-grid,.estimate-grid,.form-grid,.footer-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.footer-bottom{flex-direction:column}.gallery-card img{height:230px}}
 @media(max-width:480px){.hero-cta{flex-direction:column}.hero-cta .btn{width:100%}.trust-row{display:grid;gap:8px}.benefit-grid{grid-template-columns:1fr}.floating-actions a{width:48px;height:48px}}
 
-
-/* Community gallery, reviews and uploads */
-.submission-panel{margin-top:2.5rem;padding:clamp(1.25rem,3vw,2rem);background:#fff;border:1px solid #dce6ef;border-radius:24px;box-shadow:0 16px 38px rgba(7,55,99,.09)}
-.community-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1.25rem}
-.community-form label{display:grid;gap:.45rem;font-weight:700;color:#123b63}
-.community-form input,.community-form select,.community-form textarea{width:100%;padding:.85rem 1rem;border:1px solid #bdcbd8;border-radius:12px;font:inherit;background:#fff;color:#102f4e}
-.community-form input:focus,.community-form select:focus,.community-form textarea:focus{outline:3px solid rgba(95,201,28,.2);border-color:#5fc91c}
-.community-form .full{grid-column:1/-1}.community-form .consent{display:flex;grid-template-columns:auto 1fr;align-items:start;font-weight:500}.community-form .consent input{width:1.1rem;height:1.1rem;margin-top:.15rem}
-.community-empty{text-align:center;color:#60758a}.review-meta{display:flex;justify-content:space-between;gap:1rem;margin-top:1rem;color:#60758a;font-size:.9rem}.review-reply{margin-top:1rem;padding:1rem;border-left:4px solid #5fc91c;background:#f4f9ef;border-radius:0 12px 12px 0}.gallery-card .gallery-meta{padding:.75rem 1rem 1rem;color:#60758a;font-size:.9rem}
-.admin-shell{max-width:1100px;margin:auto;padding:2rem 1rem}.admin-login,.admin-panel{background:#fff;border:1px solid #dce6ef;border-radius:20px;padding:1.5rem;box-shadow:0 14px 34px rgba(7,55,99,.1)}.admin-grid{display:grid;gap:1rem}.admin-item{border:1px solid #dce6ef;border-radius:16px;padding:1rem}.admin-actions{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1rem}.admin-actions button{border:0;border-radius:10px;padding:.7rem 1rem;font-weight:800;cursor:pointer}.approve{background:#5fc91c;color:#092e4f}.reject{background:#e9eef3;color:#123b63}.delete{background:#b42318;color:#fff}.admin-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}.admin-photos img{width:100%;border-radius:12px}.admin-nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}
-@media(max-width:700px){.community-form{grid-template-columns:1fr}.community-form .full{grid-column:auto}.admin-photos{grid-template-columns:1fr}}
+/* DOMZOR WhatsApp floating button */
+.floating-whatsapp{
+  font-size:0;
+  background:#25D366 url("whatsapp-icon.svg") center/31px 31px no-repeat;
+}
+.floating-whatsapp::after{
+  content:"";
+  width:31px;
+  height:31px;
+  display:block;
+}

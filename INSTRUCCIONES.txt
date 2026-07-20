@@ -1,0 +1,10 @@
+DOMZOR — BOTÓN DE WHATSAPP
+
+Sube estos dos archivos a la RAÍZ del repositorio:
+1. style.css — reemplaza el archivo actual.
+2. whatsapp-icon.svg — archivo nuevo.
+
+No cambies index.html. El enlace existente seguirá abriendo:
+https://wa.me/13127784975
+
+Después de hacer Commit changes, espera 1–2 minutos y recarga domzor.com.
