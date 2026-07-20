@@ -29,15 +29,3 @@ img{max-width:100%;display:block} a{color:inherit} button,input,select,textarea{
 @media(max-width:1100px){.menu-toggle{display:block;margin-left:auto}.primary-nav{position:absolute;left:16px;right:16px;top:calc(100% + 8px);display:none;flex-direction:column;align-items:stretch;padding:18px;background:#fff;border-radius:14px;box-shadow:var(--shadow)}.primary-nav.open{display:flex}.language-switcher{border-left:0;border-top:1px solid var(--border);padding:14px 0 0;display:block}.language-buttons{margin-top:8px}.header-actions .phone-link{display:none}.benefit-grid{grid-template-columns:repeat(2,1fr)}.estimate-grid{grid-template-columns:1fr 1.5fr}.contact-card{grid-column:1/-1}}
 @media(max-width:760px){.header-inner{min-height:72px}.brand{flex-basis:180px}.brand img{width:175px}.header-actions .btn{display:none}.hero{min-height:640px;background-position:64% center}.hero-content{padding-block:82px;margin-left:auto}.hero-logo{width:280px}.service-grid,.gallery-grid,.testimonial-grid{grid-template-columns:1fr}.benefit-grid,.estimate-grid,.form-grid,.footer-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.footer-bottom{flex-direction:column}.gallery-card img{height:230px}}
 @media(max-width:480px){.hero-cta{flex-direction:column}.hero-cta .btn{width:100%}.trust-row{display:grid;gap:8px}.benefit-grid{grid-template-columns:1fr}.floating-actions a{width:48px;height:48px}}
-
-/* DOMZOR WhatsApp floating button */
-.floating-whatsapp{
-  font-size:0;
-  background:#25D366 url("whatsapp-icon.svg") center/31px 31px no-repeat;
-}
-.floating-whatsapp::after{
-  content:"";
-  width:31px;
-  height:31px;
-  display:block;
-}

@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    skip:"Skip to content", menuOpen:"Open menu", navHome:"Home", navServices:"Services", navAbout:"About", navGallery:"Gallery", navContact:"Contact", language:"Language", freeEstimate:"Free Estimate",
+    skip:"Skip to content", menuOpen:"Open menu", navHome:"Home", navServices:"Services", navPricing:"Pricing", navAbout:"About", navGallery:"Gallery", navContact:"Contact", language:"Language", freeEstimate:"Free Estimate", viewPricing:"View Pricing",
     heroEyebrow:"Cleaning • Restoration • Peace of mind", heroTitle:"Professional Cleaning & Restoration Services", heroCopy:"We restore your home, protect your property, and help you move forward with confidence.", callNow:"Call Now", getEstimate:"Get a Free Estimate", trustFast:"Fast response", trustEquipment:"Professional equipment", trustEstimates:"Free estimates",
     servicesEyebrow:"Our Services", servicesTitle:"Complete Cleaning & Restoration Solutions", servicesCopy:"Dependable service for everyday cleaning, difficult projects, and urgent property damage.",
     serviceHouse:"House Cleaning", serviceHouseCopy:"Routine home cleaning that keeps every room fresh, healthy, and comfortable.", serviceDeep:"Deep Cleaning", serviceDeepCopy:"Detailed cleaning for kitchens, bathrooms, floors, fixtures, and high-touch areas.", serviceMove:"Move In / Move Out", serviceMoveCopy:"A thorough reset before moving into a home or handing the keys to the next resident.", serviceWater:"Water Damage Restoration", serviceWaterCopy:"Rapid extraction, drying, cleanup, and restoration after leaks or flooding.", serviceMold:"Mold Remediation", serviceMoldCopy:"Careful removal and prevention measures designed to support a healthier property.", serviceFire:"Fire & Smoke Restoration", serviceFireCopy:"Cleanup of smoke, soot, odors, and affected surfaces after a fire-related incident.",
@@ -13,7 +13,7 @@ const translations = {
     footerCopy:"Professional cleaning and restoration services you can trust.", footerLinks:"Quick Links", footerAreas:"Service Areas", footerAreasCopy:"Chicago, Schaumburg, Elgin, Aurora, Naperville, and surrounding areas.", rights:"All rights reserved.", privacy:"Privacy Policy", terms:"Terms"
   },
   es: {
-    skip:"Ir al contenido", menuOpen:"Abrir menú", navHome:"Inicio", navServices:"Servicios", navAbout:"Nosotros", navGallery:"Galería", navContact:"Contacto", language:"Idioma", freeEstimate:"Cotización gratis",
+    skip:"Ir al contenido", menuOpen:"Abrir menú", navHome:"Inicio", navServices:"Servicios", navPricing:"Precios", navAbout:"Nosotros", navGallery:"Galería", navContact:"Contacto", language:"Idioma", freeEstimate:"Cotización gratis", viewPricing:"Ver precios",
     heroEyebrow:"Limpieza • Restauración • Tranquilidad", heroTitle:"Servicios Profesionales de Limpieza y Restauración", heroCopy:"Restauramos su hogar, protegemos su propiedad y le ayudamos a seguir adelante con confianza.", callNow:"Llamar ahora", getEstimate:"Solicitar cotización gratis", trustFast:"Respuesta rápida", trustEquipment:"Equipo profesional", trustEstimates:"Cotizaciones gratis",
     servicesEyebrow:"Nuestros servicios", servicesTitle:"Soluciones completas de limpieza y restauración", servicesCopy:"Servicio confiable para limpieza cotidiana, proyectos difíciles y daños urgentes en la propiedad.",
     serviceHouse:"Limpieza residencial", serviceHouseCopy:"Limpieza rutinaria para mantener cada habitación fresca, saludable y cómoda.", serviceDeep:"Limpieza profunda", serviceDeepCopy:"Limpieza detallada de cocinas, baños, pisos, accesorios y áreas de alto contacto.", serviceMove:"Entrada / salida de vivienda", serviceMoveCopy:"Una limpieza completa antes de mudarse o entregar las llaves al siguiente residente.", serviceWater:"Restauración por daños de agua", serviceWaterCopy:"Extracción, secado, limpieza y restauración rápida después de fugas o inundaciones.", serviceMold:"Remediación de moho", serviceMoldCopy:"Eliminación cuidadosa y medidas preventivas para ayudar a mantener una propiedad más saludable.", serviceFire:"Restauración por fuego y humo", serviceFireCopy:"Limpieza de humo, hollín, olores y superficies afectadas después de un incendio.",
@@ -100,9 +100,4 @@ if (form) {
     ].join("\n");
     window.open(`https://wa.me/13127784975?text=${encodeURIComponent(message)}`, "_blank", "noopener");
   });
-}
-
-
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => navigator.serviceWorker.register("/service-worker.js").catch(console.error));
 }

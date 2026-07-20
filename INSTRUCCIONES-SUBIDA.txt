@@ -1,0 +1,33 @@
+DOMZOR WEBSITE V2 — PRECIOS, CALCULADORA Y RESERVAS
+
+ARCHIVOS NUEVOS:
+- pricing.html
+- pricing.css
+- pricing.js
+
+ARCHIVOS ACTUALIZADOS:
+- index.html
+- app.js
+
+ARCHIVOS SIN CAMBIOS IMPORTANTES:
+- style.css
+- domzor-logo.svg
+- domzor-logo-white.svg
+- CNAME
+
+CÓMO SUBIR:
+1. Descomprime este ZIP.
+2. En GitHub, abre el repositorio Domzor.com.
+3. Usa Add file > Upload files.
+4. Selecciona TODOS los archivos del paquete, no el ZIP.
+5. Permite que GitHub reemplace index.html y app.js.
+6. Haz Commit changes.
+7. Espera 1–2 minutos.
+8. Abre https://domzor.com/pricing.html
+
+IMPORTANTE:
+- La calculadora y la solicitud por WhatsApp funcionan inmediatamente.
+- El cobro real del anticipo con tarjeta NO está activado.
+- Para cobrar en línea será necesario conectar una cuenta empresarial verificada de Stripe o Square mediante un servidor seguro.
+- Nunca publiques claves secretas de Stripe, Square o bancos en GitHub.
+- Los precios son estimaciones iniciales y deben revisarse antes de publicarlos como política comercial definitiva.

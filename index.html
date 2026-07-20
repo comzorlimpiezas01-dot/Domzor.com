@@ -11,13 +11,8 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://domzor.com">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script defer src="supabase-config.js"></script>
   <script defer src="app.js"></script>
-  <script defer src="community.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
@@ -36,6 +31,7 @@
       <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
         <a href="#home" data-i18n="navHome">Home</a>
         <a href="#services" data-i18n="navServices">Services</a>
+        <a href="pricing.html" data-i18n="navPricing">Pricing</a>
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#gallery" data-i18n="navGallery">Gallery</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
@@ -67,6 +63,7 @@
         <div class="hero-cta">
           <a class="btn btn-primary btn-large" href="tel:+13127784975" data-i18n="callNow">Call Now</a>
           <a class="btn btn-outline btn-large" href="#estimate" data-i18n="getEstimate">Get a Free Estimate</a>
+          <a class="btn btn-light btn-large" href="pricing.html" data-i18n="viewPricing">View Pricing</a>
         </div>
         <div class="trust-row">
           <span data-i18n="trustFast">Fast response</span>
@@ -118,12 +115,11 @@
           <h2 data-i18n="galleryTitle">Real Results You Can See</h2>
           <p data-i18n="galleryCopy">Explore examples of cleaning and restoration work.</p>
         </div>
-        <div class="gallery-grid" id="community-gallery">
-          <figure class="gallery-card"><img src="result-1.jpg" alt="Cleaning result" loading="lazy" decoding="async"><figcaption data-i18n="gallery1">Carpet and floor care</figcaption></figure>
-          <figure class="gallery-card"><img src="result-2.jpg" alt="Cleaning result" loading="lazy" decoding="async"><figcaption data-i18n="gallery2">Detailed home cleaning</figcaption></figure>
-          <figure class="gallery-card"><img src="result-3.jpg" alt="Cleaning result" loading="lazy" decoding="async"><figcaption data-i18n="gallery3">Kitchen restoration and cleanup</figcaption></figure>
+        <div class="gallery-grid">
+          <figure class="gallery-card"><img src="result-1.jpg" alt="Cleaning result" loading="lazy"><figcaption data-i18n="gallery1">Carpet and floor care</figcaption></figure>
+          <figure class="gallery-card"><img src="result-2.jpg" alt="Cleaning result" loading="lazy"><figcaption data-i18n="gallery2">Detailed home cleaning</figcaption></figure>
+          <figure class="gallery-card"><img src="result-3.jpg" alt="Cleaning result" loading="lazy"><figcaption data-i18n="gallery3">Kitchen restoration and cleanup</figcaption></figure>
         </div>
-        <p class="community-empty" id="gallery-status" hidden></p>
       </div>
     </section>
 
@@ -134,29 +130,10 @@
           <h2 data-i18n="reviewsTitle">Service built to earn five-star trust</h2>
           <p data-i18n="reviewsCopy">Verified customer reviews will appear here as DOMZOR completes new projects.</p>
         </div>
-        <div class="testimonial-grid" id="community-reviews">
+        <div class="testimonial-grid">
           <blockquote><div class="stars">★★★★★</div><p data-i18n="review1">“Responsive, respectful, and focused on quality.”</p><footer data-i18n="reviewLabel">Customer review</footer></blockquote>
           <blockquote><div class="stars">★★★★★</div><p data-i18n="review2">“Clear communication from the first call through the final walkthrough.”</p><footer data-i18n="reviewLabel">Customer review</footer></blockquote>
           <blockquote><div class="stars">★★★★★</div><p data-i18n="review3">“Professional attention to detail and dependable service.”</p><footer data-i18n="reviewLabel">Customer review</footer></blockquote>
-        </div>
-        <div class="submission-panel">
-          <div>
-            <p class="eyebrow green">Share Your Experience / Comparte tu experiencia</p>
-            <h3>Upload photos and leave a review</h3>
-            <p>Your submission will be reviewed by DOMZOR before it appears publicly.</p>
-          </div>
-          <form id="community-form" class="community-form">
-            <label>Full name / Nombre completo<input name="customer_name" maxlength="80" required></label>
-            <label>Email / Correo<input name="email" type="email" autocomplete="email" required></label>
-            <label>Service / Servicio<select name="service_type" required><option value="">Select / Selecciona</option><option>House Cleaning</option><option>Deep Cleaning</option><option>Water Damage Restoration</option><option>Mold Remediation</option><option>Fire & Smoke Restoration</option><option>Other</option></select></label>
-            <label>Rating / Calificación<select name="rating" required><option value="5">★★★★★</option><option value="4">★★★★☆</option><option value="3">★★★☆☆</option><option value="2">★★☆☆☆</option><option value="1">★☆☆☆☆</option></select></label>
-            <label class="full">Comment / Comentario<textarea name="comment" rows="4" maxlength="1000" required></textarea></label>
-            <label>Before photo / Foto antes<input name="before_photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
-            <label>After photo / Foto después<input name="after_photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
-            <label class="consent full"><input name="consent" type="checkbox" required> I authorize DOMZOR to publish this review and the selected photos. / Autorizo a DOMZOR a publicar esta opinión y las fotos seleccionadas.</label>
-            <button class="btn btn-primary" type="submit">Submit for review / Enviar para revisión</button>
-            <p id="community-status" class="form-status" role="status" aria-live="polite"></p>
-          </form>
         </div>
       </div>
     </section>
@@ -218,7 +195,8 @@
         <img class="footer-logo" src="domzor-logo-white.svg" alt="DOMZOR Cleaning & Restoration">
         <p data-i18n="footerCopy">Professional cleaning and restoration services you can trust.</p>
       </div>
-      <div><h3 data-i18n="footerLinks">Quick Links</h3><a href="#home" data-i18n="navHome">Home</a><a href="#services" data-i18n="navServices">Services</a><a href="#gallery" data-i18n="navGallery">Gallery</a><a href="#estimate" data-i18n="freeEstimate">Free Estimate</a></div>
+      <div><h3 data-i18n="footerLinks">Quick Links</h3><a href="#home" data-i18n="navHome">Home</a><a href="#services" data-i18n="navServices">Services</a>
+        <a href="pricing.html" data-i18n="navPricing">Pricing</a><a href="#gallery" data-i18n="navGallery">Gallery</a><a href="#estimate" data-i18n="freeEstimate">Free Estimate</a></div>
       <div><h3 data-i18n="footerAreas">Service Areas</h3><p data-i18n="footerAreasCopy">Chicago, Schaumburg, Elgin, Aurora, Naperville, and surrounding areas.</p></div>
       <div><h3 data-i18n="navContact">Contact</h3><a href="tel:+13127784975">(312) 778-4975</a><a href="mailto:info@domzor.com">info@domzor.com</a></div>
     </div>
