@@ -12,3 +12,5 @@
 .payment-note{padding:20px 0;background:#fff6d9;color:#604b00;border-top:1px solid #ead78b;border-bottom:1px solid #ead78b}.payment-note strong{margin-right:6px}
 @media(max-width:900px){.price-grid{grid-template-columns:repeat(2,1fr)}.calculator-layout,.booking-grid{grid-template-columns:1fr}}
 @media(max-width:620px){.price-grid,.calculator-fields,.booking-form{grid-template-columns:1fr}.booking-form .full{grid-column:auto}.estimate-result,.deposit-result{align-items:flex-start;flex-direction:column}.pricing-hero{padding:72px 0}}
+
+.terms-gate{padding:18px;border-radius:12px;background:#fff7d9;border:1px solid #e7d47d;color:#5c4900}.terms-gate p{margin:4px 0 10px}.terms-gate .btn-secondary{background:#fff;color:var(--navy);border-color:#d4c36d}.terms-accepted-message{color:#1d6f28;font-weight:800}

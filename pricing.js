@@ -97,10 +97,21 @@ function updateCalculator(){
 [service,size,bedrooms,bathrooms,extras,urgent].forEach(el=>el?.addEventListener("input",updateCalculator));
 updateCalculator();
 
+
+const TERMS_VERSION="DOMZOR-TC-2026-07-20-v1";
+const policyCheckbox=document.querySelector("#booking-policy-consent");
+const acceptedMessage=document.querySelector("#terms-accepted-message");
+let termsAcceptance=null;
+try{termsAcceptance=JSON.parse(localStorage.getItem("domzorTermsAcceptance")||"null");}catch(error){termsAcceptance=null;}
+const termsAreCurrent=termsAcceptance&&termsAcceptance.version===TERMS_VERSION&&termsAcceptance.acceptedTerms===true&&termsAcceptance.electronicConsent===true;
+if(policyCheckbox){policyCheckbox.disabled=!termsAreCurrent;policyCheckbox.checked=termsAreCurrent;}
+if(acceptedMessage&&termsAreCurrent){acceptedMessage.hidden=false;acceptedMessage.textContent=`Accepted by ${termsAcceptance.fullName} on ${new Date(termsAcceptance.acceptedAt).toLocaleString()}.`;}
+
 const bookingForm=document.querySelector("#booking-form");
 const bookingStatus=document.querySelector(".booking-status");
 bookingForm?.addEventListener("submit",event=>{
   event.preventDefault();
+  if(!termsAreCurrent){window.location.href="terms.html";return;}
   const data=new FormData(bookingForm);
   const lang=currentLang();
   bookingStatus.textContent=pricingTranslations[lang].sending;

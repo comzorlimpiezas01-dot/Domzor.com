@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOMZOR Pricing & Booking</title>
+  <meta name="description" content="View starting prices, calculate an estimated service price, and request a reservation with DOMZOR Cleaning & Restoration.">
+  <meta name="theme-color" content="#073763">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pricing.css">
+  <script defer src="pricing.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="DOMZOR home">
+        <img src="domzor-logo.svg" alt="DOMZOR Cleaning & Restoration">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+        <span class="sr-only" data-i18n="menuOpen">Open menu</span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="#prices" data-i18n="navPricing">Pricing</a>
+        <a href="#calculator" data-i18n="navCalculator">Calculator</a>
+        <a href="#booking" data-i18n="navBooking">Booking</a>
+        <div class="language-switcher">
+          <span class="language-label">🌐 <span data-i18n="language">Language</span></span>
+          <div class="language-buttons">
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">🇺🇸 English</button>
+            <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">🇪🇸 Español</button>
+          </div>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+13127784975">☎ (312) 778-4975</a>
+        <a class="btn btn-primary" href="#booking" data-i18n="bookNow">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricing-hero">
+      <div class="container pricing-hero-inner">
+        <p class="eyebrow" data-i18n="pricingEyebrow">Transparent starting prices</p>
+        <h1 data-i18n="pricingTitle">Pricing & Booking</h1>
+        <p data-i18n="pricingIntro">Use our starting prices and calculator to plan your service. Final pricing may change after an inspection or review of project photos.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary btn-large" href="#calculator" data-i18n="calculatePrice">Calculate Price</a>
+          <a class="btn btn-outline btn-large" href="tel:+13127784975" data-i18n="callNow">Call Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prices">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow green" data-i18n="pricesEyebrow">Starting prices</p>
+          <h2 data-i18n="pricesTitle">Professional services for homes and businesses</h2>
+          <p data-i18n="pricesDisclaimer">Prices shown are starting estimates. Property size, condition, materials, access, contamination level, labor, equipment, and emergency response can affect the final quote.</p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card"><span>🏠</span><h3 data-i18n="residential">Residential Cleaning</h3><strong>$120+</strong><p data-i18n="residentialCopy">Routine cleaning for apartments and homes.</p></article>
+          <article class="price-card"><span>🏢</span><h3 data-i18n="commercial">Commercial Cleaning</h3><strong>$180+</strong><p data-i18n="commercialCopy">Offices, stores, restaurants, and recurring service.</p></article>
+          <article class="price-card"><span>🚚</span><h3 data-i18n="move">Move In / Move Out</h3><strong>$200+</strong><p data-i18n="moveCopy">A detailed reset before or after moving.</p></article>
+          <article class="price-card"><span>🛋️</span><h3 data-i18n="upholstery">Upholstery Cleaning</h3><strong>$60+</strong><p data-i18n="upholsteryCopy">Chairs, sofas, sectionals, and mattresses.</p></article>
+          <article class="price-card"><span>🧹</span><h3 data-i18n="carpet">Carpet Cleaning</h3><strong>$70+</strong><p data-i18n="carpetCopy">Starting price for one standard room.</p></article>
+          <article class="price-card"><span>🪟</span><h3 data-i18n="windows">Window Cleaning</h3><strong>$8+</strong><p data-i18n="windowsCopy">Per window, interior service starting price.</p></article>
+          <article class="price-card featured"><span>💧</span><h3 data-i18n="water">Water Damage Restoration</h3><strong>$350+</strong><p data-i18n="waterCopy">Extraction, drying, cleanup, and restoration.</p></article>
+          <article class="price-card featured"><span>🦠</span><h3 data-i18n="mold">Mold Remediation</h3><strong>$500+</strong><p data-i18n="moldCopy">Small treatment areas; inspection required.</p></article>
+          <article class="price-card featured"><span>🔥</span><h3 data-i18n="fire">Fire & Smoke Restoration</h3><strong>$1,000+</strong><p data-i18n="fireCopy">Smoke, soot, odor, and affected surfaces.</p></article>
+        </div>
+
+        <div class="discount-box">
+          <h3 data-i18n="discountTitle">Available discounts</h3>
+          <p data-i18n="discountCopy">10% first-service, senior, military, or veteran discount. Discounts cannot be combined. Referral credit: $25 after the referred service is completed and paid.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="calculator-section" id="calculator">
+      <div class="container calculator-layout">
+        <div class="calculator-copy">
+          <p class="eyebrow" data-i18n="calculatorEyebrow">Instant estimate</p>
+          <h2 data-i18n="calculatorTitle">Price Calculator</h2>
+          <p data-i18n="calculatorCopy">Select the service and project details to receive a planning estimate. This is not a final contract price.</p>
+          <ul>
+            <li data-i18n="calcBenefit1">Estimated total shown instantly</li>
+            <li data-i18n="calcBenefit2">30% reservation deposit calculated automatically</li>
+            <li data-i18n="calcBenefit3">Send the complete request through WhatsApp</li>
+          </ul>
+        </div>
+
+        <form class="price-calculator" id="price-calculator">
+          <label><span data-i18n="serviceType">Service type</span>
+            <select id="service-type" required>
+              <option value="residential" data-i18n="residential">Residential Cleaning</option>
+              <option value="commercial" data-i18n="commercial">Commercial Cleaning</option>
+              <option value="move" data-i18n="move">Move In / Move Out</option>
+              <option value="upholstery" data-i18n="upholstery">Upholstery Cleaning</option>
+              <option value="carpet" data-i18n="carpet">Carpet Cleaning</option>
+              <option value="windows" data-i18n="windows">Window Cleaning</option>
+              <option value="water" data-i18n="water">Water Damage Restoration</option>
+              <option value="mold" data-i18n="mold">Mold Remediation</option>
+              <option value="fire" data-i18n="fire">Fire & Smoke Restoration</option>
+            </select>
+          </label>
+
+          <div class="calculator-fields">
+            <label><span data-i18n="propertySize">Property / project size</span>
+              <select id="property-size">
+                <option value="1" data-i18n="sizeSmall">Small</option>
+                <option value="1.45" data-i18n="sizeMedium">Medium</option>
+                <option value="2" data-i18n="sizeLarge">Large</option>
+              </select>
+            </label>
+            <label><span data-i18n="bedrooms">Bedrooms / work areas</span><input id="bedrooms" type="number" min="0" max="20" value="1"></label>
+            <label><span data-i18n="bathrooms">Bathrooms</span><input id="bathrooms" type="number" min="0" max="20" value="1"></label>
+            <label><span data-i18n="extras">Additional items</span><input id="extras" type="number" min="0" max="50" value="0"></label>
+          </div>
+
+          <label class="check-row"><input id="urgent" type="checkbox"> <span data-i18n="urgent">Emergency / priority response</span></label>
+
+          <div class="estimate-result" aria-live="polite">
+            <span data-i18n="estimatedPrice">Estimated price</span>
+            <strong id="estimated-total">$120</strong>
+            <small data-i18n="estimateNotice">Planning estimate only. Final price requires confirmation.</small>
+          </div>
+
+          <div class="deposit-result">
+            <span data-i18n="depositAmount">30% reservation deposit</span>
+            <strong id="deposit-total">$36</strong>
+          </div>
+
+          <a class="btn btn-primary btn-large" id="calculator-whatsapp" href="#" target="_blank" rel="noopener" data-i18n="sendEstimate">Send Estimate Request</a>
+        </form>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+        <div>
+          <p class="eyebrow green" data-i18n="bookingEyebrow">Reserve your appointment</p>
+          <h2 data-i18n="bookingTitle">Book with a 30% Deposit</h2>
+          <p data-i18n="bookingCopy">The deposit reserves your preferred date and helps us assign staff, travel time, and equipment. The remaining balance is due according to the written service agreement.</p>
+          <div class="policy-card">
+            <h3 data-i18n="policyTitle">Reservation policy</h3>
+            <ul>
+              <li data-i18n="policy1">Cancellation more than 24 hours before the appointment: deposit may be refunded.</li>
+              <li data-i18n="policy2">Cancellation within 24 hours: deposit may be nonrefundable.</li>
+              <li data-i18n="policy3">If DOMZOR cancels, the deposit is refunded or applied to a rescheduled appointment.</li>
+              <li data-i18n="policy4">Emergency and restoration work may require a separate written scope and payment schedule.</li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <label><span data-i18n="fullName">Full name</span><input name="name" required autocomplete="name"></label>
+          <label><span data-i18n="phone">Phone number</span><input name="phone" type="tel" required autocomplete="tel"></label>
+          <label><span data-i18n="email">Email address</span><input name="email" type="email" required autocomplete="email"></label>
+          <label><span data-i18n="preferredDate">Preferred date</span><input name="date" type="date" required></label>
+          <label><span data-i18n="preferredTime">Preferred time</span><input name="time" type="time" required></label>
+          <label><span data-i18n="serviceAddress">Service address</span><input name="address" autocomplete="street-address"></label>
+          <label class="full"><span data-i18n="projectDetails">Project details</span><textarea name="details" rows="5" required></textarea></label>
+          <div class="terms-gate full" id="terms-gate">
+<p><strong>Terms acceptance required</strong></p>
+<p>Before requesting an appointment, review and electronically accept the Service Terms & Conditions.</p>
+<a class="btn btn-secondary" href="terms.html">Review and Accept Terms</a>
+<p class="terms-accepted-message" id="terms-accepted-message" hidden></p>
+</div>
+<label class="check-row full"><input id="booking-policy-consent" type="checkbox" required disabled> <span>I confirm that I accepted the current Service Terms & Conditions and understand that the appointment requires DOMZOR's written confirmation.</span></label>
+          <button class="btn btn-primary btn-large full" type="submit" data-i18n="requestBooking">Request Booking</button>
+          <p class="booking-status full" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="payment-note">
+      <div class="container">
+        <strong data-i18n="paymentTitle">Online deposit payments:</strong>
+        <span data-i18n="paymentCopy">The calculator is active now. Secure card payments will be activated after DOMZOR connects a verified Stripe or Square business account. Do not paste secret payment keys into GitHub.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><img class="footer-logo" src="domzor-logo-white.svg" alt="DOMZOR"><p data-i18n="footerCopy">Professional cleaning and restoration services you can trust.</p></div>
+      <div><h3 data-i18n="quickLinks">Quick Links</h3><a href="index.html" data-i18n="navHome">Home</a><a href="#prices" data-i18n="navPricing">Pricing</a><a href="#calculator" data-i18n="navCalculator">Calculator</a><a href="terms.html">Terms & Conditions</a></div>
+      <div><h3 data-i18n="contact">Contact</h3><a href="tel:+13127784975">(312) 778-4975</a><a href="mailto:info@domzor.com">info@domzor.com</a></div>
+      <div><h3 data-i18n="serviceArea">Service Area</h3><p data-i18n="serviceAreaCopy">Chicago and surrounding communities.</p></div>
+    </div>
+    <div class="container footer-bottom"><p>© <span id="year"></span> DOMZOR Cleaning & Restoration.</p><p data-i18n="rights">All rights reserved.</p></div>
+  </footer>
+
+  <div class="floating-actions">
+    <a class="floating-call" href="tel:+13127784975" aria-label="Call DOMZOR">☎</a>
+    <a class="floating-whatsapp" href="https://wa.me/13127784975" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a>
+  </div>
+</body>
+</html>
