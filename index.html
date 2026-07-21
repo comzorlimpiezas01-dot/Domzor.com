@@ -1,216 +1,622 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DOMZOR | Professional Cleaning & Restoration</title>
-  <meta name="description" content="Professional cleaning and restoration services in Chicago and surrounding communities. Free estimates.">
-  <meta name="theme-color" content="#073763">
-  <meta property="og:title" content="DOMZOR Cleaning & Restoration">
-  <meta property="og:description" content="Professional cleaning and restoration services. Fast response. Free estimates.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://domzor.com">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="app.js"></script>
-</head>
-<body>
-  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   DOMZOR | Professional Cleaning &amp; Restoration
+  </title>
+  <meta content="Professional cleaning and restoration services in Chicago and surrounding communities. Free estimates." name="description"/>
+  <meta content="#073763" name="theme-color"/>
+  <meta content="DOMZOR Cleaning &amp; Restoration" property="og:title"/>
+  <meta content="Professional cleaning and restoration services. Fast response. Free estimates." property="og:description"/>
+  <meta content="website" property="og:type"/>
+  <meta content="https://domzor.com" property="og:url"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="style.css" rel="stylesheet"/>
+  <script defer="" src="app.js">
+  </script>
+  <style>
+   /* DOMZOR floating WhatsApp button */
+.floating-whatsapp{
+  background:#25D366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.floating-whatsapp .whatsapp-logo{
+  width:36px;
+  height:36px;
+  display:block;
+}
+  </style>
+ </head>
+ <body>
+  <a class="skip-link" data-i18n="skip" href="#main">
+   Skip to content
+  </a>
   <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#home" aria-label="DOMZOR home">
-        <img src="domzor-logo.svg" alt="DOMZOR Cleaning & Restoration">
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-        <span></span><span></span><span></span>
-        <span class="sr-only" data-i18n="menuOpen">Open menu</span>
-      </button>
-
-      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
-        <a href="#home" data-i18n="navHome">Home</a>
-        <a href="#services" data-i18n="navServices">Services</a>
-        <a href="pricing.html" data-i18n="navPricing">Pricing</a>
-        <a href="#about" data-i18n="navAbout">About</a>
-        <a href="#gallery" data-i18n="navGallery">Gallery</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
-
-        <div class="language-switcher" aria-label="Language selector">
-          <span class="language-label">🌐 <span data-i18n="language">Language</span></span>
-          <div class="language-buttons">
-            <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">🇺🇸 English</button>
-            <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">🇪🇸 Español</button>
-          </div>
-        </div>
-      </nav>
-
-      <div class="header-actions">
-        <a class="phone-link" href="tel:+13127784975"><span aria-hidden="true">☎</span> (312) 778-4975</a>
-        <a class="btn btn-primary" href="#estimate" data-i18n="freeEstimate">Free Estimate</a>
+   <div class="container header-inner">
+    <a aria-label="DOMZOR home" class="brand" href="#home">
+     <img alt="DOMZOR Cleaning &amp; Restoration" src="domzor-logo.svg"/>
+    </a>
+    <button aria-controls="primary-nav" aria-expanded="false" class="menu-toggle" type="button">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+     <span class="sr-only" data-i18n="menuOpen">
+      Open menu
+     </span>
+    </button>
+    <nav aria-label="Primary navigation" class="primary-nav" id="primary-nav">
+     <a data-i18n="navHome" href="#home">
+      Home
+     </a>
+     <a data-i18n="navServices" href="#services">
+      Services
+     </a>
+     <a data-i18n="navPricing" href="pricing.html">
+      Pricing
+     </a>
+     <a data-i18n="navAbout" href="#about">
+      About
+     </a>
+     <a data-i18n="navGallery" href="#gallery">
+      Gallery
+     </a>
+     <a data-i18n="navContact" href="#contact">
+      Contact
+     </a>
+     <div aria-label="Language selector" class="language-switcher">
+      <span class="language-label">
+       🌐
+       <span data-i18n="language">
+        Language
+       </span>
+      </span>
+      <div class="language-buttons">
+       <button aria-pressed="true" class="lang-btn" data-lang="en" type="button">
+        🇺🇸 English
+       </button>
+       <button aria-pressed="false" class="lang-btn" data-lang="es" type="button">
+        🇪🇸 Espa&ntilde;ol
+       </button>
       </div>
+     </div>
+    </nav>
+    <div class="header-actions">
+     <a class="phone-link" href="tel:+13127784975">
+      <span aria-hidden="true">
+       &phone;
+      </span>
+      (312) 778-4975
+     </a>
+     <a class="btn btn-primary" data-i18n="freeEstimate" href="#estimate">
+      Free Estimate
+     </a>
     </div>
+   </div>
   </header>
-
   <main id="main">
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <img class="hero-logo" src="domzor-logo-white.svg" alt="DOMZOR Cleaning & Restoration">
-        <p class="eyebrow" data-i18n="heroEyebrow">Cleaning • Restoration • Peace of mind</p>
-        <h1 data-i18n="heroTitle">Professional Cleaning & Restoration Services</h1>
-        <p class="hero-copy" data-i18n="heroCopy">We restore your home, protect your property, and help you move forward with confidence.</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary btn-large" href="tel:+13127784975" data-i18n="callNow">Call Now</a>
-          <a class="btn btn-outline btn-large" href="#estimate" data-i18n="getEstimate">Get a Free Estimate</a>
-          <a class="btn btn-light btn-large" href="pricing.html" data-i18n="viewPricing">View Pricing</a>
-        </div>
-        <div class="trust-row">
-          <span data-i18n="trustFast">Fast response</span>
-          <span data-i18n="trustEquipment">Professional equipment</span>
-          <span data-i18n="trustEstimates">Free estimates</span>
-        </div>
+   <section class="hero" id="home">
+    <div class="hero-overlay">
+    </div>
+    <div class="container hero-content">
+     <img alt="DOMZOR Cleaning &amp; Restoration" class="hero-logo" src="domzor-logo-white.svg"/>
+     <p class="eyebrow" data-i18n="heroEyebrow">
+      Cleaning &bull; Restoration &bull; Peace of mind
+     </p>
+     <h1 data-i18n="heroTitle">
+      Professional Cleaning &amp; Restoration Services
+     </h1>
+     <p class="hero-copy" data-i18n="heroCopy">
+      We restore your home, protect your property, and help you move forward with confidence.
+     </p>
+     <div class="hero-cta">
+      <a class="btn btn-primary btn-large" data-i18n="callNow" href="tel:+13127784975">
+       Call Now
+      </a>
+      <a class="btn btn-outline btn-large" data-i18n="getEstimate" href="#estimate">
+       Get a Free Estimate
+      </a>
+      <a class="btn btn-light btn-large" data-i18n="viewPricing" href="pricing.html">
+       View Pricing
+      </a>
+     </div>
+     <div class="trust-row">
+      <span data-i18n="trustFast">
+       Fast response
+      </span>
+      <span data-i18n="trustEquipment">
+       Professional equipment
+      </span>
+      <span data-i18n="trustEstimates">
+       Free estimates
+      </span>
+     </div>
+    </div>
+   </section>
+   <section class="section services" id="services">
+    <div class="container">
+     <div class="section-heading">
+      <p class="eyebrow green" data-i18n="servicesEyebrow">
+       Our Services
+      </p>
+      <h2 data-i18n="servicesTitle">
+       Complete Cleaning &amp; Restoration Solutions
+      </h2>
+      <p data-i18n="servicesCopy">
+       Dependable service for everyday cleaning, difficult projects, and urgent property damage.
+      </p>
+     </div>
+     <div class="service-grid">
+      <article class="service-card">
+       <div class="service-icon">
+        ⌂
+       </div>
+       <h3 data-i18n="serviceHouse">
+        House Cleaning
+       </h3>
+       <p data-i18n="serviceHouseCopy">
+        Routine home cleaning that keeps every room fresh, healthy, and comfortable.
+       </p>
+      </article>
+      <article class="service-card">
+       <div class="service-icon">
+        ✦
+       </div>
+       <h3 data-i18n="serviceDeep">
+        Deep Cleaning
+       </h3>
+       <p data-i18n="serviceDeepCopy">
+        Detailed cleaning for kitchens, bathrooms, floors, fixtures, and high-touch areas.
+       </p>
+      </article>
+      <article class="service-card">
+       <div class="service-icon">
+        ▣
+       </div>
+       <h3 data-i18n="serviceMove">
+        Move In / Move Out
+       </h3>
+       <p data-i18n="serviceMoveCopy">
+        A thorough reset before moving into a home or handing the keys to the next resident.
+       </p>
+      </article>
+      <article class="service-card">
+       <div class="service-icon">
+        ◉
+       </div>
+       <h3 data-i18n="serviceWater">
+        Water Damage Restoration
+       </h3>
+       <p data-i18n="serviceWaterCopy">
+        Rapid extraction, drying, cleanup, and restoration after leaks or flooding.
+       </p>
+      </article>
+      <article class="service-card">
+       <div class="service-icon">
+        ✹
+       </div>
+       <h3 data-i18n="serviceMold">
+        Mold Remediation
+       </h3>
+       <p data-i18n="serviceMoldCopy">
+        Careful removal and prevention measures designed to support a healthier property.
+       </p>
+      </article>
+      <article class="service-card">
+       <div class="service-icon">
+        ♨
+       </div>
+       <h3 data-i18n="serviceFire">
+        Fire &amp; Smoke Restoration
+       </h3>
+       <p data-i18n="serviceFireCopy">
+        Cleanup of smoke, soot, odors, and affected surfaces after a fire-related incident.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="why" id="about">
+    <div class="container">
+     <div class="section-heading light">
+      <p class="eyebrow" data-i18n="whyEyebrow">
+       Why Choose DOMZOR?
+      </p>
+      <h2 data-i18n="whyTitle">
+       Professional care from the first call to the final walkthrough
+      </h2>
+     </div>
+     <div class="benefit-grid">
+      <article>
+       <span>
+        &checkmark;
+       </span>
+       <h3 data-i18n="benefit1">
+        Trained Professionals
+       </h3>
+       <p data-i18n="benefit1Copy">
+        Courteous, careful, and focused on quality.
+       </p>
+      </article>
+      <article>
+       <span>
+        &checkmark;
+       </span>
+       <h3 data-i18n="benefit2">
+        Reliable Service
+       </h3>
+       <p data-i18n="benefit2Copy">
+        Clear communication and dependable scheduling.
+       </p>
+      </article>
+      <article>
+       <span>
+        &checkmark;
+       </span>
+       <h3 data-i18n="benefit3">
+        Fast Response
+       </h3>
+       <p data-i18n="benefit3Copy">
+        Quick communication when you need help.
+       </p>
+      </article>
+      <article>
+       <span>
+        &checkmark;
+       </span>
+       <h3 data-i18n="benefit4">
+        Professional Equipment
+       </h3>
+       <p data-i18n="benefit4Copy">
+        Tools and methods selected for the job.
+       </p>
+      </article>
+      <article>
+       <span>
+        &checkmark;
+       </span>
+       <h3 data-i18n="benefit5">
+        Free Estimates
+       </h3>
+       <p data-i18n="benefit5Copy">
+        Clear information before work begins.
+       </p>
+      </article>
+      <article>
+       <span>
+        &checkmark;
+       </span>
+       <h3 data-i18n="benefit6">
+        Satisfaction Focused
+       </h3>
+       <p data-i18n="benefit6Copy">
+        We aim to earn your trust on every project.
+       </p>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section class="section gallery" id="gallery">
+    <div class="container">
+     <div class="section-heading">
+      <p class="eyebrow green" data-i18n="galleryEyebrow">
+       Before &amp; After
+      </p>
+      <h2 data-i18n="galleryTitle">
+       Real Results You Can See
+      </h2>
+      <p data-i18n="galleryCopy">
+       Explore examples of cleaning and restoration work.
+      </p>
+     </div>
+     <div class="gallery-grid">
+      <figure class="gallery-card">
+       <img alt="Cleaning result" loading="lazy" src="result-1.jpg"/>
+       <figcaption data-i18n="gallery1">
+        Carpet and floor care
+       </figcaption>
+      </figure>
+      <figure class="gallery-card">
+       <img alt="Cleaning result" loading="lazy" src="result-2.jpg"/>
+       <figcaption data-i18n="gallery2">
+        Detailed home cleaning
+       </figcaption>
+      </figure>
+      <figure class="gallery-card">
+       <img alt="Cleaning result" loading="lazy" src="result-3.jpg"/>
+       <figcaption data-i18n="gallery3">
+        Kitchen restoration and cleanup
+       </figcaption>
+      </figure>
+     </div>
+    </div>
+   </section>
+   <section class="section testimonials">
+    <div class="container">
+     <div class="section-heading">
+      <p class="eyebrow green" data-i18n="reviewsEyebrow">
+       What Clients Say
+      </p>
+      <h2 data-i18n="reviewsTitle">
+       Service built to earn five-star trust
+      </h2>
+      <p data-i18n="reviewsCopy">
+       Verified customer reviews will appear here as DOMZOR completes new projects.
+      </p>
+     </div>
+     <div class="testimonial-grid">
+      <blockquote>
+       <div class="stars">
+        &starf;&starf;&starf;&starf;&starf;
+       </div>
+       <p data-i18n="review1">
+        &ldquo;Responsive, respectful, and focused on quality.&rdquo;
+       </p>
+       <footer data-i18n="reviewLabel">
+        Customer review
+       </footer>
+      </blockquote>
+      <blockquote>
+       <div class="stars">
+        &starf;&starf;&starf;&starf;&starf;
+       </div>
+       <p data-i18n="review2">
+        &ldquo;Clear communication from the first call through the final walkthrough.&rdquo;
+       </p>
+       <footer data-i18n="reviewLabel">
+        Customer review
+       </footer>
+      </blockquote>
+      <blockquote>
+       <div class="stars">
+        &starf;&starf;&starf;&starf;&starf;
+       </div>
+       <p data-i18n="review3">
+        &ldquo;Professional attention to detail and dependable service.&rdquo;
+       </p>
+       <footer data-i18n="reviewLabel">
+        Customer review
+       </footer>
+      </blockquote>
+     </div>
+    </div>
+   </section>
+   <section class="estimate" id="estimate">
+    <div class="container estimate-grid">
+     <div class="estimate-copy">
+      <p class="eyebrow" data-i18n="estimateEyebrow">
+       Free Estimate
+      </p>
+      <h2 data-i18n="estimateTitle">
+       Get Your Free Estimate Today
+      </h2>
+      <p data-i18n="estimateCopy">
+       Tell us what you need and DOMZOR will contact you as soon as possible.
+      </p>
+      <ul>
+       <li data-i18n="estimatePoint1">
+        Fast response
+       </li>
+       <li data-i18n="estimatePoint2">
+        No obligation
+       </li>
+       <li data-i18n="estimatePoint3">
+        Clear communication
+       </li>
+      </ul>
+     </div>
+     <form class="estimate-form" id="estimate-form">
+      <div class="form-grid">
+       <label>
+        <span data-i18n="formName">
+         Full name
+        </span>
+        <input autocomplete="name" name="name" required="" type="text"/>
+       </label>
+       <label>
+        <span data-i18n="formPhone">
+         Phone number
+        </span>
+        <input autocomplete="tel" name="phone" required="" type="tel"/>
+       </label>
+       <label>
+        <span data-i18n="formEmail">
+         Email address
+        </span>
+        <input autocomplete="email" name="email" required="" type="email"/>
+       </label>
+       <label>
+        <span data-i18n="formService">
+         Service needed
+        </span>
+        <select name="service" required="">
+         <option data-i18n="formSelect" value="">
+          Select a service
+         </option>
+         <option data-i18n="serviceHouse" value="House Cleaning">
+          House Cleaning
+         </option>
+         <option data-i18n="serviceDeep" value="Deep Cleaning">
+          Deep Cleaning
+         </option>
+         <option data-i18n="serviceMove" value="Move In / Move Out">
+          Move In / Move Out
+         </option>
+         <option data-i18n="serviceWater" value="Water Damage Restoration">
+          Water Damage Restoration
+         </option>
+         <option data-i18n="serviceMold" value="Mold Remediation">
+          Mold Remediation
+         </option>
+         <option data-i18n="serviceFire" value="Fire &amp; Smoke Restoration">
+          Fire &amp; Smoke Restoration
+         </option>
+         <option data-i18n="formOther" value="Other">
+          Other
+         </option>
+        </select>
+       </label>
+       <label class="full">
+        <span data-i18n="formAddress">
+         Service address
+        </span>
+        <input autocomplete="street-address" name="address" type="text"/>
+       </label>
+       <label>
+        <span data-i18n="formDate">
+         Preferred date
+        </span>
+        <input name="date" type="date"/>
+       </label>
+       <label>
+        <span data-i18n="formTime">
+         Preferred time
+        </span>
+        <input name="time" type="time"/>
+       </label>
+       <label class="full">
+        <span data-i18n="formDetails">
+         Project details
+        </span>
+        <textarea name="message" required="" rows="5"></textarea>
+       </label>
       </div>
-    </section>
-
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow green" data-i18n="servicesEyebrow">Our Services</p>
-          <h2 data-i18n="servicesTitle">Complete Cleaning & Restoration Solutions</h2>
-          <p data-i18n="servicesCopy">Dependable service for everyday cleaning, difficult projects, and urgent property damage.</p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card"><div class="service-icon">⌂</div><h3 data-i18n="serviceHouse">House Cleaning</h3><p data-i18n="serviceHouseCopy">Routine home cleaning that keeps every room fresh, healthy, and comfortable.</p></article>
-          <article class="service-card"><div class="service-icon">✦</div><h3 data-i18n="serviceDeep">Deep Cleaning</h3><p data-i18n="serviceDeepCopy">Detailed cleaning for kitchens, bathrooms, floors, fixtures, and high-touch areas.</p></article>
-          <article class="service-card"><div class="service-icon">▣</div><h3 data-i18n="serviceMove">Move In / Move Out</h3><p data-i18n="serviceMoveCopy">A thorough reset before moving into a home or handing the keys to the next resident.</p></article>
-          <article class="service-card"><div class="service-icon">◉</div><h3 data-i18n="serviceWater">Water Damage Restoration</h3><p data-i18n="serviceWaterCopy">Rapid extraction, drying, cleanup, and restoration after leaks or flooding.</p></article>
-          <article class="service-card"><div class="service-icon">✹</div><h3 data-i18n="serviceMold">Mold Remediation</h3><p data-i18n="serviceMoldCopy">Careful removal and prevention measures designed to support a healthier property.</p></article>
-          <article class="service-card"><div class="service-icon">♨</div><h3 data-i18n="serviceFire">Fire & Smoke Restoration</h3><p data-i18n="serviceFireCopy">Cleanup of smoke, soot, odors, and affected surfaces after a fire-related incident.</p></article>
-        </div>
+      <button class="btn btn-primary btn-large" data-i18n="formSubmit" type="submit">
+       Submit Request
+      </button>
+      <p aria-live="polite" class="form-status" role="status">
+      </p>
+     </form>
+     <aside class="contact-card" id="contact">
+      <h3 data-i18n="contactTitle">
+       Contact Information
+      </h3>
+      <p>
+       <strong data-i18n="contactPhone">
+        Phone:
+       </strong>
+       <a href="tel:+13127784975">
+        (312) 778-4975
+       </a>
+      </p>
+      <p>
+       <strong data-i18n="contactEmail">
+        Email:
+       </strong>
+       <a href="mailto:info@domzor.com">
+        info@domzor.com
+       </a>
+      </p>
+      <p>
+       <strong data-i18n="contactHours">
+        Hours:
+       </strong>
+       <span data-i18n="contactHoursValue">
+        Mon&ndash;Sat, 7:00 AM&ndash;7:00 PM
+       </span>
+      </p>
+      <p>
+       <strong data-i18n="contactArea">
+        Service area:
+       </strong>
+       <span data-i18n="contactAreaValue">
+        Chicago and surrounding communities
+       </span>
+      </p>
+      <div class="map-placeholder">
+       <span data-i18n="mapLabel">
+        Chicago service area
+       </span>
       </div>
-    </section>
-
-    <section class="why" id="about">
-      <div class="container">
-        <div class="section-heading light">
-          <p class="eyebrow" data-i18n="whyEyebrow">Why Choose DOMZOR?</p>
-          <h2 data-i18n="whyTitle">Professional care from the first call to the final walkthrough</h2>
-        </div>
-        <div class="benefit-grid">
-          <article><span>✓</span><h3 data-i18n="benefit1">Trained Professionals</h3><p data-i18n="benefit1Copy">Courteous, careful, and focused on quality.</p></article>
-          <article><span>✓</span><h3 data-i18n="benefit2">Reliable Service</h3><p data-i18n="benefit2Copy">Clear communication and dependable scheduling.</p></article>
-          <article><span>✓</span><h3 data-i18n="benefit3">Fast Response</h3><p data-i18n="benefit3Copy">Quick communication when you need help.</p></article>
-          <article><span>✓</span><h3 data-i18n="benefit4">Professional Equipment</h3><p data-i18n="benefit4Copy">Tools and methods selected for the job.</p></article>
-          <article><span>✓</span><h3 data-i18n="benefit5">Free Estimates</h3><p data-i18n="benefit5Copy">Clear information before work begins.</p></article>
-          <article><span>✓</span><h3 data-i18n="benefit6">Satisfaction Focused</h3><p data-i18n="benefit6Copy">We aim to earn your trust on every project.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section gallery" id="gallery">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow green" data-i18n="galleryEyebrow">Before & After</p>
-          <h2 data-i18n="galleryTitle">Real Results You Can See</h2>
-          <p data-i18n="galleryCopy">Explore examples of cleaning and restoration work.</p>
-        </div>
-        <div class="gallery-grid">
-          <figure class="gallery-card"><img src="result-1.jpg" alt="Cleaning result" loading="lazy"><figcaption data-i18n="gallery1">Carpet and floor care</figcaption></figure>
-          <figure class="gallery-card"><img src="result-2.jpg" alt="Cleaning result" loading="lazy"><figcaption data-i18n="gallery2">Detailed home cleaning</figcaption></figure>
-          <figure class="gallery-card"><img src="result-3.jpg" alt="Cleaning result" loading="lazy"><figcaption data-i18n="gallery3">Kitchen restoration and cleanup</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="section testimonials">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow green" data-i18n="reviewsEyebrow">What Clients Say</p>
-          <h2 data-i18n="reviewsTitle">Service built to earn five-star trust</h2>
-          <p data-i18n="reviewsCopy">Verified customer reviews will appear here as DOMZOR completes new projects.</p>
-        </div>
-        <div class="testimonial-grid">
-          <blockquote><div class="stars">★★★★★</div><p data-i18n="review1">“Responsive, respectful, and focused on quality.”</p><footer data-i18n="reviewLabel">Customer review</footer></blockquote>
-          <blockquote><div class="stars">★★★★★</div><p data-i18n="review2">“Clear communication from the first call through the final walkthrough.”</p><footer data-i18n="reviewLabel">Customer review</footer></blockquote>
-          <blockquote><div class="stars">★★★★★</div><p data-i18n="review3">“Professional attention to detail and dependable service.”</p><footer data-i18n="reviewLabel">Customer review</footer></blockquote>
-        </div>
-      </div>
-    </section>
-
-    <section class="estimate" id="estimate">
-      <div class="container estimate-grid">
-        <div class="estimate-copy">
-          <p class="eyebrow" data-i18n="estimateEyebrow">Free Estimate</p>
-          <h2 data-i18n="estimateTitle">Get Your Free Estimate Today</h2>
-          <p data-i18n="estimateCopy">Tell us what you need and DOMZOR will contact you as soon as possible.</p>
-          <ul>
-            <li data-i18n="estimatePoint1">Fast response</li>
-            <li data-i18n="estimatePoint2">No obligation</li>
-            <li data-i18n="estimatePoint3">Clear communication</li>
-          </ul>
-        </div>
-
-        <form class="estimate-form" id="estimate-form">
-          <div class="form-grid">
-            <label><span data-i18n="formName">Full name</span><input type="text" name="name" autocomplete="name" required></label>
-            <label><span data-i18n="formPhone">Phone number</span><input type="tel" name="phone" autocomplete="tel" required></label>
-            <label><span data-i18n="formEmail">Email address</span><input type="email" name="email" autocomplete="email" required></label>
-            <label><span data-i18n="formService">Service needed</span>
-              <select name="service" required>
-                <option value="" data-i18n="formSelect">Select a service</option>
-                <option value="House Cleaning" data-i18n="serviceHouse">House Cleaning</option>
-                <option value="Deep Cleaning" data-i18n="serviceDeep">Deep Cleaning</option>
-                <option value="Move In / Move Out" data-i18n="serviceMove">Move In / Move Out</option>
-                <option value="Water Damage Restoration" data-i18n="serviceWater">Water Damage Restoration</option>
-                <option value="Mold Remediation" data-i18n="serviceMold">Mold Remediation</option>
-                <option value="Fire & Smoke Restoration" data-i18n="serviceFire">Fire & Smoke Restoration</option>
-                <option value="Other" data-i18n="formOther">Other</option>
-              </select>
-            </label>
-            <label class="full"><span data-i18n="formAddress">Service address</span><input type="text" name="address" autocomplete="street-address"></label>
-            <label><span data-i18n="formDate">Preferred date</span><input type="date" name="date"></label>
-            <label><span data-i18n="formTime">Preferred time</span><input type="time" name="time"></label>
-            <label class="full"><span data-i18n="formDetails">Project details</span><textarea name="message" rows="5" required></textarea></label>
-          </div>
-          <button class="btn btn-primary btn-large" type="submit" data-i18n="formSubmit">Submit Request</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
-
-        <aside class="contact-card" id="contact">
-          <h3 data-i18n="contactTitle">Contact Information</h3>
-          <p><strong data-i18n="contactPhone">Phone:</strong> <a href="tel:+13127784975">(312) 778-4975</a></p>
-          <p><strong data-i18n="contactEmail">Email:</strong> <a href="mailto:info@domzor.com">info@domzor.com</a></p>
-          <p><strong data-i18n="contactHours">Hours:</strong> <span data-i18n="contactHoursValue">Mon–Sat, 7:00 AM–7:00 PM</span></p>
-          <p><strong data-i18n="contactArea">Service area:</strong> <span data-i18n="contactAreaValue">Chicago and surrounding communities</span></p>
-          <div class="map-placeholder"><span data-i18n="mapLabel">Chicago service area</span></div>
-        </aside>
-      </div>
-    </section>
+     </aside>
+    </div>
+   </section>
   </main>
-
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <img class="footer-logo" src="domzor-logo-white.svg" alt="DOMZOR Cleaning & Restoration">
-        <p data-i18n="footerCopy">Professional cleaning and restoration services you can trust.</p>
-      </div>
-      <div><h3 data-i18n="footerLinks">Quick Links</h3><a href="#home" data-i18n="navHome">Home</a><a href="#services" data-i18n="navServices">Services</a>
-        <a href="pricing.html" data-i18n="navPricing">Pricing</a><a href="#gallery" data-i18n="navGallery">Gallery</a><a href="#estimate" data-i18n="freeEstimate">Free Estimate</a></div>
-      <div><h3 data-i18n="footerAreas">Service Areas</h3><p data-i18n="footerAreasCopy">Chicago, Schaumburg, Elgin, Aurora, Naperville, and surrounding areas.</p></div>
-      <div><h3 data-i18n="navContact">Contact</h3><a href="tel:+13127784975">(312) 778-4975</a><a href="mailto:info@domzor.com">info@domzor.com</a></div>
+   <div class="container footer-grid">
+    <div>
+     <img alt="DOMZOR Cleaning &amp; Restoration" class="footer-logo" src="domzor-logo-white.svg"/>
+     <p data-i18n="footerCopy">
+      Professional cleaning and restoration services you can trust.
+     </p>
     </div>
-    <div class="container footer-bottom">
-      <p>© <span id="year"></span> DOMZOR Cleaning & Restoration. <span data-i18n="rights">All rights reserved.</span></p>
-      <p><span data-i18n="privacy">Privacy Policy</span> • <span data-i18n="terms">Terms</span></p>
+    <div>
+     <h3 data-i18n="footerLinks">
+      Quick Links
+     </h3>
+     <a data-i18n="navHome" href="#home">
+      Home
+     </a>
+     <a data-i18n="navServices" href="#services">
+      Services
+     </a>
+     <a data-i18n="navPricing" href="pricing.html">
+      Pricing
+     </a>
+     <a data-i18n="navGallery" href="#gallery">
+      Gallery
+     </a>
+     <a data-i18n="freeEstimate" href="#estimate">
+      Free Estimate
+     </a>
     </div>
+    <div>
+     <h3 data-i18n="footerAreas">
+      Service Areas
+     </h3>
+     <p data-i18n="footerAreasCopy">
+      Chicago, Schaumburg, Elgin, Aurora, Naperville, and surrounding areas.
+     </p>
+    </div>
+    <div>
+     <h3 data-i18n="navContact">
+      Contact
+     </h3>
+     <a href="tel:+13127784975">
+      (312) 778-4975
+     </a>
+     <a href="mailto:info@domzor.com">
+      info@domzor.com
+     </a>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    <p>
+     &copy;
+     <span id="year">
+     </span>
+     DOMZOR Cleaning &amp; Restoration.
+     <span data-i18n="rights">
+      All rights reserved.
+     </span>
+    </p>
+    <p>
+     <span data-i18n="privacy">
+      Privacy Policy
+     </span>
+     &bull;
+     <span data-i18n="terms">
+      Terms
+     </span>
+    </p>
+   </div>
   </footer>
-
-  <div class="floating-actions" aria-label="Quick contact">
-    <a class="floating-call" href="tel:+13127784975" aria-label="Call DOMZOR">☎</a>
-    <a class="floating-whatsapp" href="https://wa.me/13127784975" target="_blank" rel="noopener" aria-label="WhatsApp">
-  <img src="whatsapp-icon.svg" alt="WhatsApp">
-</a>
+  <div aria-label="Quick contact" class="floating-actions">
+   <a aria-label="Call DOMZOR" class="floating-call" href="tel:+13127784975">
+    &phone;
+   </a>
+   <a aria-label="Chat with DOMZOR on WhatsApp" class="floating-whatsapp" href="https://wa.me/13127784975" rel="noopener noreferrer" target="_blank" title="WhatsApp">
+    <svg aria-hidden="true" class="whatsapp-logo" focusable="false" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+     <path d="M16.02 3C8.84 3 3 8.72 3 15.75c0 2.51.75 4.96 2.16 7.03L3.75 29l6.42-1.68a13.2 13.2 0 0 0 5.84 1.38h.01C23.2 28.7 29 22.98 29 15.95 29 8.82 23.2 3 16.02 3Zm0 23.54c-1.92 0-3.8-.51-5.43-1.47l-.39-.23-3.81 1 1.02-3.71-.25-.38a10.53 10.53 0 0 1-1.63-5.99c0-5.87 4.71-10.64 10.5-10.64 5.79 0 10.5 4.77 10.5 10.64 0 5.88-4.71 10.78-10.51 10.78Zm5.76-7.98c-.31-.16-1.86-.92-2.15-1.02-.29-.11-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.37.24-.68.08-.31-.16-1.32-.49-2.51-1.56-.93-.83-1.55-1.85-1.73-2.16-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.62-.52-.54-.71-.55h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.64s1.13 3.06 1.29 3.27c.16.21 2.22 3.4 5.39 4.77.75.33 1.34.52 1.8.66.76.24 1.44.21 1.98.13.6-.09 1.86-.76 2.12-1.49.26-.73.26-1.36.18-1.49-.08-.13-.29-.21-.6-.37Z" fill="#ffffff">
+     </path>
+    </svg>
+   </a>
   </div>
-</body>
+ </body>
 </html>
