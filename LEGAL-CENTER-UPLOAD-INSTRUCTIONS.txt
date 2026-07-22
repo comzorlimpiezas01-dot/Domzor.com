@@ -1,0 +1,34 @@
+DOMZOR LEGAL CENTER V1
+
+NEW WEBSITE SECTION
+- legal/index.html
+- legal/terms.html
+- legal/privacy.html
+- legal/cancellation-policy.html
+- legal/photo-release.html
+- legal/electronic-signature.html
+- legal/legal.css
+- legal/legal.js
+- pdf/DOMZOR-Corporate-Service-Agreement.pdf
+
+ALSO INCLUDED
+- Existing website files
+- Existing pricing and booking gate
+- Root terms.html for compatibility
+- Printable corporate agreement PDF
+
+UPLOAD
+1. Extract this ZIP.
+2. In GitHub, upload ALL folders and files from inside the package.
+3. Allow GitHub to replace existing files.
+4. Commit changes.
+5. Test:
+   https://domzor.com/legal/
+   https://domzor.com/legal/terms.html
+   https://domzor.com/pricing.html
+
+IMPORTANT
+- These documents are business drafts, not a substitute for legal advice.
+- The current acceptance uses browser localStorage only.
+- For secure records, automatic email copies, PDF generation, audit logs, identity verification, and cross-device retention, connect a secure backend or electronic-signature provider.
+- Have an Illinois-licensed attorney review the final documents before relying on them with real customers.

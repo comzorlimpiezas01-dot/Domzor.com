@@ -1,0 +1,53 @@
+DOMZOR WEBSITE V3 COMPLETE
+
+ADDED WITHOUT REMOVING EXISTING CONTENT
+
+PHASE 1
+- Emergency 24/7 banner
+- Commercial/property services
+- Expanded before-and-after section
+- Photo/review submission page
+- Service-area section
+- Existing pricing, legal center, gallery, reviews, forms, and WhatsApp button retained
+
+PHASE 2
+- Existing calculator and 30% deposit estimate retained
+- Existing booking and legal acceptance retained
+- Emergency request through WhatsApp
+- Client portal preview
+- Service tracking preview
+- Live-help launcher
+- Photo/review upload front end
+
+PHASE 3
+- Customer portal
+- Property manager portal
+- Insurance partner portal
+- Service tracking interface
+- Updated PWA service worker
+
+WORKS NOW
+- Navigation and pages
+- WhatsApp and emergency requests
+- Price calculator
+- Booking request
+- Legal center
+- Browser-based terms acceptance
+- Responsive design
+
+REQUIRES BACKEND BEFORE REAL USE
+- Login accounts
+- Real uploads and moderation
+- Email confirmations
+- Secure e-signature records
+- Stripe/Square payments
+- Push notifications
+- Technician GPS
+- Secure files and admin dashboard
+
+UPLOAD
+1. Extract the ZIP.
+2. Upload ALL internal files and folders to the GitHub repository root.
+3. Allow replacements.
+4. Commit changes.
+5. Test domzor.com, emergency.html, community.html, portals.html, and legal/.
