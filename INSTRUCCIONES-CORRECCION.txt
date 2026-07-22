@@ -1,0 +1,26 @@
+DOMZOR V3 CORREGIDO — PORTADA ORIGINAL CONSERVADA
+
+ESTE PAQUETE:
+- Restaura la página principal con el diseño original.
+- No agrega secciones nuevas dentro de la portada.
+- Conserva logo, imagen principal, menú hamburguesa, textos, servicios, galería,
+  reseñas, formulario y botones tal como estaban.
+- Cambia solamente el botón flotante de WhatsApp para mostrar el logotipo.
+- Agrega enlaces dentro del menú móvil a páginas separadas:
+  Emergency, Photos & Reviews, Portals, Tracking y Legal.
+- Conserva todas las páginas adicionales ya creadas.
+
+CÓMO SUBIR:
+1. Descomprime este ZIP.
+2. En GitHub abre el repositorio Domzor.com.
+3. Pulsa Add file > Upload files.
+4. Selecciona TODOS los archivos y carpetas internos.
+5. Permite reemplazar archivos existentes.
+6. Commit directly to main.
+7. Pulsa Commit changes.
+8. Espera 1–3 minutos y abre https://domzor.com
+
+IMPORTANTE:
+- No subas el ZIP directamente.
+- La portada debe seguir viéndose como antes.
+- Los portales, pagos, cargas reales y seguimiento necesitan backend antes de uso real.
