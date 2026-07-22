@@ -1,7 +1,123 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DOMZOR | Emergency Request</title><meta name="theme-color" content="#073763"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="v3.css"></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="domzor-logo.svg" alt="DOMZOR"></a><div class="header-actions"><a class="phone-link" href="tel:+13127784975">☎ (312) 778-4975</a><a class="btn btn-primary" href="pricing.html">Pricing</a></div></div></header><main><section class="pricing-hero"><div class="container pricing-hero-inner"><p class="eyebrow">DOMZOR Cleaning & Restoration</p><h1>Emergency Request</h1><p>Fast-response request form for urgent water, mold, fire, smoke, or property damage.</p></div></section>
-<section class="v3-section v3-soft"><div class="container"><form class="portal-panel" id="emergency-form"><div class="portal-grid">
-<label>Name<input name="name" required></label><label>Phone<input name="phone" type="tel" required></label>
-<label>Address<input name="address" required></label><label>Emergency type<select name="type"><option>Water Damage</option><option>Mold Concern</option><option>Fire / Smoke</option><option>Other</option></select></label>
-<label class="full">Describe the emergency<textarea name="details" rows="5" required></textarea></label>
-<button class="btn btn-primary full" type="submit">Send Emergency Request by WhatsApp</button>
-</div></form></div></section></main><footer class="site-footer"><div class="container footer-bottom"><p>© <span id="year"></span> DOMZOR Cleaning & Restoration.</p><p><a href="legal-center.html">Legal Center</a></p></div></footer><script>document.querySelector("#year").textContent=new Date().getFullYear();document.querySelector('#emergency-form')?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const m=`DOMZOR EMERGENCY REQUEST\nName: ${d.get('name')}\nPhone: ${d.get('phone')}\nAddress: ${d.get('address')}\nType: ${d.get('type')}\nDetails: ${d.get('details')}`;window.open('https://wa.me/13127784975?text='+encodeURIComponent(m),'_blank','noopener');});</script></body></html>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title data-en="DOMZOR | Emergency Request" data-es="DOMZOR | Emergencia Request">
+   DOMZOR | Emergency Request
+  </title>
+  <meta content="#073763" name="theme-color"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="v3.css" rel="stylesheet"/>
+  <link href="bilingual.css" rel="stylesheet"/>
+  <script defer="True" src="bilingual.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a class="brand" href="index.html">
+     <img alt="DOMZOR" src="domzor-logo.svg"/>
+    </a>
+    <div class="header-actions">
+     <a class="phone-link" href="tel:+13127784975">
+      &phone; (312) 778-4975
+     </a>
+     <a class="btn btn-primary" data-en="Pricing" data-es="Precios" href="pricing.html">
+      Pricing
+     </a>
+    </div>
+   </div>
+  </header>
+  <main>
+   <section class="pricing-hero">
+    <div class="container pricing-hero-inner">
+     <p class="eyebrow" data-en="DOMZOR Cleaning &amp; Restoration" data-es="DOMZOR Limpieza y Restauraci&oacute;n">
+      DOMZOR Cleaning &amp; Restoration
+     </p>
+     <h1 data-en="Emergency Request" data-es="Solicitud de emergencia">
+      Emergency Request
+     </h1>
+     <p data-en="Fast-response request form for urgent water, mold, fire, smoke, or property damage." data-es="Formulario de respuesta r&aacute;pida para da&ntilde;os urgentes por agua, moho, incendio, humo o propiedad.">
+      Fast-response request form for urgent water, mold, fire, smoke, or property damage.
+     </p>
+    </div>
+   </section>
+   <section class="v3-section v3-soft">
+    <div class="container">
+     <form class="portal-panel" id="emergency-form">
+      <div class="portal-grid">
+       <label>
+        <span data-en="Name" data-es="Nombre">
+         Name
+        </span>
+        <input name="name" required=""/>
+       </label>
+       <label>
+        <span data-en="Phone" data-es="Tel&eacute;fono">
+         Phone
+        </span>
+        <input name="phone" required="" type="tel"/>
+       </label>
+       <label>
+        <span data-en="Address" data-es="Direcci&oacute;n">
+         Address
+        </span>
+        <input name="address" required=""/>
+       </label>
+       <label>
+        <span data-en="Emergency type" data-es="Tipo de emergencia">
+         Emergency type
+        </span>
+        <select name="type">
+         <option data-en="Water Damage" data-es="Da&ntilde;os por agua">
+          Water Damage
+         </option>
+         <option data-en="Mold Concern" data-es="Posible moho">
+          Mold Concern
+         </option>
+         <option data-en="Fire / Smoke" data-es="Incendio / humo">
+          Fire / Smoke
+         </option>
+         <option data-en="Other" data-es="Otro">
+          Other
+         </option>
+        </select>
+       </label>
+       <label class="full">
+        <span data-en="Describe the emergency" data-es="Describe la emergencia">
+         Describe the emergency
+        </span>
+        <textarea name="details" required="" rows="5"></textarea>
+       </label>
+       <button class="btn btn-primary full" data-en="Send Emergency Request by WhatsApp" data-es="Enviar solicitud de emergencia por WhatsApp" type="submit">
+        Send Emergency Request by WhatsApp
+       </button>
+      </div>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-bottom">
+    <p>
+     &copy;
+     <span id="year">
+     </span>
+     <span data-en="DOMZOR Cleaning &amp; Restoration." data-es="DOMZOR Limpieza y Restauraci&oacute;n.">
+      DOMZOR Cleaning &amp; Restoration.
+     </span>
+    </p>
+    <p>
+     <a data-en="Legal Center" data-es="Centro legal" href="legal-center.html">
+      Legal Center
+     </a>
+    </p>
+   </div>
+  </footer>
+  <script>
+   document.querySelector("#year").textContent=new Date().getFullYear();document.querySelector('#emergency-form')?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.target);const m=`DOMZOR EMERGENCY REQUEST\nName: ${d.get('name')}\nPhone: ${d.get('phone')}\nAddress: ${d.get('address')}\nType: ${d.get('type')}\nDetails: ${d.get('details')}`;window.open('https://wa.me/13127784975?text='+encodeURIComponent(m),'_blank','noopener');});
+  </script>
+ </body>
+</html>

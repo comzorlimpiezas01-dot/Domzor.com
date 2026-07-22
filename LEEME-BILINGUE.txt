@@ -1,0 +1,30 @@
+DOMZOR V3 BILINGÜE
+
+Este paquete conserva el diseño y las funciones actuales, y agrega selección EN/ES en todas las páginas.
+
+INCLUYE:
+- Página principal bilingüe.
+- Precios y reservas bilingües.
+- Emergencias bilingües.
+- Fotos y reseñas bilingües.
+- Portales bilingües.
+- Seguimiento bilingüe.
+- Centro legal, privacidad, cancelación, fotografías y firma electrónica bilingües.
+- Panel administrativo bilingüe.
+- El idioma seleccionado se conserva en el navegador.
+
+SUBIDA DESDE ANDROID:
+1. Descarga y descomprime este ZIP.
+2. En GitHub entra al repositorio Domzor.com.
+3. Add file > Upload files.
+4. Selecciona TODOS los archivos internos.
+5. Permite reemplazar archivos existentes.
+6. Commit directly to main.
+7. Commit changes.
+8. Espera entre 1 y 3 minutos.
+9. Abre domzor.com en una pestaña privada y prueba EN / ES.
+
+IMPORTANTE:
+- No subas el ZIP directamente.
+- No cambies el nombre de index.html.
+- Esta actualización no elimina secciones ni cambia el diseño principal.

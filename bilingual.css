@@ -1,0 +1,5 @@
+
+.global-language-switcher{display:flex;gap:6px;align-items:center;margin-left:auto}
+.global-language-switcher .lang-btn,.lang-btn[data-lang]{border:1px solid #cbd7e2;border-radius:8px;padding:7px 9px;background:#fff;color:#073763;font-weight:800;cursor:pointer}
+.global-language-switcher .lang-btn.active,.lang-btn[data-lang].active{background:#073763;color:#fff}
+@media(max-width:700px){.global-language-switcher{margin-left:8px}.global-language-switcher .lang-btn{padding:6px 8px;font-size:.78rem}}

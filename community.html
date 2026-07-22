@@ -1,11 +1,157 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DOMZOR | Photos & Reviews</title><meta name="theme-color" content="#073763"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="v3.css"></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><img src="domzor-logo.svg" alt="DOMZOR"></a><div class="header-actions"><a class="phone-link" href="tel:+13127784975">☎ (312) 778-4975</a><a class="btn btn-primary" href="pricing.html">Pricing</a></div></div></header><main><section class="pricing-hero"><div class="container pricing-hero-inner"><p class="eyebrow">DOMZOR Cleaning & Restoration</p><h1>Photos & Reviews</h1><p>Submit project photos and feedback for DOMZOR review.</p></div></section>
-<section class="v3-section v3-soft"><div class="container">
-<div class="v3-heading"><p class="eyebrow green">Photos & Reviews</p><h2>Share a completed project or customer experience</h2><p class="feature-status status-setup">Secure storage setup required before public launch</p></div>
-<form class="upload-panel" id="community-form"><div class="upload-grid">
-<label>Name<input name="name" required></label><label>Email<input name="email" type="email" required></label>
-<label>Phone<input name="phone" type="tel"></label><label>Project type<select name="type"><option>Residential Cleaning</option><option>Commercial Cleaning</option><option>Water Damage</option><option>Mold Remediation</option><option>Fire & Smoke</option></select></label>
-<label>Before photo<input name="before" type="file" accept="image/*"></label><label>After photo<input name="after" type="file" accept="image/*"></label>
-<label class="full">Review<textarea name="review" rows="5"></textarea></label>
-<label class="full"><input type="checkbox" required> I authorize DOMZOR to review this submission. Public marketing use requires separate approval.</label>
-<button class="btn btn-primary full" type="submit">Prepare Submission</button><p class="full" id="community-status"></p>
-</div></form></div></section></main><footer class="site-footer"><div class="container footer-bottom"><p>© <span id="year"></span> DOMZOR Cleaning & Restoration.</p><p><a href="legal-center.html">Legal Center</a></p></div></footer><script>document.querySelector("#year").textContent=new Date().getFullYear();document.querySelector('#community-form')?.addEventListener('submit',e=>{e.preventDefault();document.querySelector('#community-status').textContent='The form is ready. Secure uploads will activate after Supabase storage is connected.';});</script></body></html>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title data-en="DOMZOR | Photos &amp; Reviews" data-es="DOMZOR | Fotos y rese&ntilde;as">
+   DOMZOR | Photos &amp; Reviews
+  </title>
+  <meta content="#073763" name="theme-color"/>
+  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link href="v3.css" rel="stylesheet"/>
+  <link href="bilingual.css" rel="stylesheet"/>
+  <script defer="True" src="bilingual.js">
+  </script>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a class="brand" href="index.html">
+     <img alt="DOMZOR" src="domzor-logo.svg"/>
+    </a>
+    <div class="header-actions">
+     <a class="phone-link" href="tel:+13127784975">
+      &phone; (312) 778-4975
+     </a>
+     <a class="btn btn-primary" data-en="Pricing" data-es="Precios" href="pricing.html">
+      Pricing
+     </a>
+    </div>
+   </div>
+  </header>
+  <main>
+   <section class="pricing-hero">
+    <div class="container pricing-hero-inner">
+     <p class="eyebrow" data-en="DOMZOR Cleaning &amp; Restoration" data-es="DOMZOR Limpieza y Restauraci&oacute;n">
+      DOMZOR Cleaning &amp; Restoration
+     </p>
+     <h1 data-en="Photos &amp; Reviews" data-es="Fotos y rese&ntilde;as">
+      Photos &amp; Reviews
+     </h1>
+     <p data-en="Submit project photos and feedback for DOMZOR review." data-es="Env&iacute;a fotograf&iacute;as del proyecto y comentarios para revisi&oacute;n de DOMZOR.">
+      Submit project photos and feedback for DOMZOR review.
+     </p>
+    </div>
+   </section>
+   <section class="v3-section v3-soft">
+    <div class="container">
+     <div class="v3-heading">
+      <p class="eyebrow green" data-en="Photos &amp; Reviews" data-es="Fotos y rese&ntilde;as">
+       Photos &amp; Reviews
+      </p>
+      <h2 data-en="Share a completed project or customer experience" data-es="Comparte un proyecto terminado o tu experiencia como cliente">
+       Share a completed project or customer experience
+      </h2>
+      <p class="feature-status status-setup" data-en="Secure storage setup required before public launch" data-es="Se requiere almacenamiento seguro antes del lanzamiento p&uacute;blico">
+       Secure storage setup required before public launch
+      </p>
+     </div>
+     <form class="upload-panel" id="community-form">
+      <div class="upload-grid">
+       <label>
+        <span data-en="Name" data-es="Nombre">
+         Name
+        </span>
+        <input name="name" required=""/>
+       </label>
+       <label>
+        <span data-en="Email" data-es="Correo electr&oacute;nico">
+         Email
+        </span>
+        <input name="email" required="" type="email"/>
+       </label>
+       <label>
+        <span data-en="Phone" data-es="Tel&eacute;fono">
+         Phone
+        </span>
+        <input name="phone" type="tel"/>
+       </label>
+       <label>
+        <span data-en="Project type" data-es="Tipo de proyecto">
+         Project type
+        </span>
+        <select name="type">
+         <option data-en="Residential Cleaning" data-es="Limpieza residencial">
+          Residential Cleaning
+         </option>
+         <option data-en="Commercial Cleaning" data-es="Limpieza comercial">
+          Commercial Cleaning
+         </option>
+         <option data-en="Water Damage" data-es="Da&ntilde;os por agua">
+          Water Damage
+         </option>
+         <option data-en="Mold Remediation" data-es="Remediaci&oacute;n de moho">
+          Mold Remediation
+         </option>
+         <option data-en="Fire &amp; Smoke" data-es="Incendio y humo">
+          Fire &amp; Smoke
+         </option>
+        </select>
+       </label>
+       <label>
+        <span data-en="Before photo" data-es="Foto del antes">
+         Before photo
+        </span>
+        <input accept="image/*" name="before" type="file"/>
+       </label>
+       <label>
+        <span data-en="After photo" data-es="Foto del despu&eacute;s">
+         After photo
+        </span>
+        <input accept="image/*" name="after" type="file"/>
+       </label>
+       <label class="full">
+        <span data-en="Review" data-es="Rese&ntilde;a">
+         Review
+        </span>
+        <textarea name="review" rows="5"></textarea>
+       </label>
+       <label class="full">
+        <input required="" type="checkbox"/>
+        <span data-en="I authorize DOMZOR to review this submission. Public marketing use requires separate approval." data-es="Autorizo a DOMZOR a revisar este env&iacute;o. El uso publicitario requiere una autorizaci&oacute;n separada.">
+         I authorize DOMZOR to review this submission. Public marketing use requires separate approval.
+        </span>
+       </label>
+       <button class="btn btn-primary full" data-en="Prepare Submission" data-es="Preparar env&iacute;o" type="submit">
+        Prepare Submission
+       </button>
+       <p class="full" id="community-status">
+       </p>
+      </div>
+     </form>
+    </div>
+   </section>
+  </main>
+  <footer class="site-footer">
+   <div class="container footer-bottom">
+    <p>
+     &copy;
+     <span id="year">
+     </span>
+     <span data-en="DOMZOR Cleaning &amp; Restoration." data-es="DOMZOR Limpieza y Restauraci&oacute;n.">
+      DOMZOR Cleaning &amp; Restoration.
+     </span>
+    </p>
+    <p>
+     <a data-en="Legal Center" data-es="Centro legal" href="legal-center.html">
+      Legal Center
+     </a>
+    </p>
+   </div>
+  </footer>
+  <script>
+   document.querySelector("#year").textContent=new Date().getFullYear();document.querySelector('#community-form')?.addEventListener('submit',e=>{e.preventDefault();document.querySelector('#community-status').textContent='The form is ready. Secure uploads will activate after Supabase storage is connected.';});
+  </script>
+ </body>
+</html>
