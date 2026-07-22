@@ -21,5 +21,5 @@ form?.addEventListener("submit",(event)=>{
   localStorage.setItem("domzorTermsAcceptance",JSON.stringify(acceptance));
   localStorage.setItem("domzorTermsVersion",TERMS_VERSION);
   statusEl.textContent="Acceptance saved on this device. You may now continue to the booking form. A confirmed appointment still requires DOMZOR's written acceptance and project-specific agreement.";
-  setTimeout(()=>{window.location.href="../pricing.html#booking";},1200);
+  setTimeout(()=>{window.location.href="pricing.html#booking";},1200);
 });

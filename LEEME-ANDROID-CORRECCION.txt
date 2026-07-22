@@ -1,0 +1,30 @@
+DOMZOR V3 PARA ANDROID — CORRECCIÓN DEFINITIVA
+
+POR QUÉ APARECIÓ EL LEGAL CENTER COMO PORTADA:
+Al subir carpetas desde Android, los archivos pueden quedar aplanados.
+La carpeta legal también contenía un archivo llamado index.html y ese archivo
+reemplazó la portada principal.
+
+ESTE PAQUETE LO CORRIGE:
+- Solo existe un index.html: la portada original de DOMZOR.
+- El centro legal ahora se llama legal-center.html.
+- Los demás documentos legales tienen nombres únicos.
+- No hay carpetas con otro index.html que pueda reemplazar la portada.
+- Conserva precios, reservas, emergencias, fotos, portales, seguimiento y WhatsApp.
+- Mantiene el diseño original de la página principal.
+
+CÓMO SUBIR DESDE ANDROID:
+1. Descarga y descomprime este ZIP.
+2. En GitHub entra al repositorio Domzor.com.
+3. Add file > Upload files.
+4. Selecciona TODOS los archivos internos.
+5. Permite reemplazar los archivos existentes.
+6. Commit directly to main.
+7. Commit changes.
+8. Espera 1–3 minutos.
+9. Abre https://domzor.com en una pestaña privada o borra caché.
+
+IMPORTANTE:
+- Puedes subir todos estos archivos sueltos a la raíz.
+- No hay carpetas obligatorias en este paquete.
+- No subas el ZIP directamente.
