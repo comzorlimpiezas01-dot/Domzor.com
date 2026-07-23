@@ -29,8 +29,15 @@ const pricingTranslations = {
 };
 
 const basePrices = {
-  residential:120, commercial:180, move:200, upholstery:60, carpet:70,
-  windows:8, water:350, mold:500, fire:1000
+  residential:120,
+  commercial:250,
+  move:300,
+  upholstery:150,
+  carpet:180,
+  windows:100,
+  water:1200,
+  mold:1500,
+  fire:1000
 };
 const serviceLabels = {
   en:{residential:"Residential Cleaning",commercial:"Commercial Cleaning",move:"Move In / Move Out",upholstery:"Upholstery Cleaning",carpet:"Carpet Cleaning",windows:"Window Cleaning",water:"Water Damage Restoration",mold:"Mold Remediation",fire:"Fire & Smoke Restoration"},
@@ -65,36 +72,72 @@ const depositEl=document.querySelector("#deposit-total");
 const whatsapp=document.querySelector("#calculator-whatsapp");
 
 function calculate(){
-  const key=service.value;
-  let total=basePrices[key]||0;
-  const multiplier=Number(size.value)||1;
-  if(["residential","commercial","move"].includes(key)){
-    total=total*multiplier+(Number(bedrooms.value)||0)*22+(Number(bathrooms.value)||0)*28+(Number(extras.value)||0)*18;
+  const key=service?.value||"residential";
+  const multiplier=Number(size?.value)||1;
+  const workAreas=Math.max(0,Number(bedrooms?.value)||0);
+  const bathCount=Math.max(0,Number(bathrooms?.value)||0);
+  const extraCount=Math.max(0,Number(extras?.value)||0);
+  let total=basePrices[key]||basePrices.residential;
+
+  if(key==="residential"){
+    total=basePrices.residential*multiplier+workAreas*22+bathCount*28+extraCount*18;
+  }else if(key==="commercial"){
+    total=basePrices.commercial*multiplier+workAreas*35+bathCount*35+extraCount*25;
+  }else if(key==="move"){
+    total=basePrices.move*multiplier+workAreas*30+bathCount*35+extraCount*22;
   }else if(key==="carpet"){
-    total=70*Math.max(1,Number(bedrooms.value)||1)+(Number(extras.value)||0)*35;
+    total=basePrices.carpet*multiplier+Math.max(0,workAreas-1)*55+extraCount*35;
   }else if(key==="windows"){
-    total=8*Math.max(1,Number(extras.value)||1)*multiplier;
+    total=basePrices.windows*multiplier+extraCount*8;
   }else if(key==="upholstery"){
-    total=60*Math.max(1,Number(extras.value)||1)*multiplier;
-  }else{
-    total=total*multiplier+(Number(extras.value)||0)*75;
+    total=basePrices.upholstery*multiplier+extraCount*60;
+  }else if(key==="water"){
+    total=basePrices.water*multiplier+workAreas*125+bathCount*75+extraCount*100;
+  }else if(key==="mold"){
+    total=basePrices.mold*multiplier+workAreas*150+bathCount*100+extraCount*125;
+  }else if(key==="fire"){
+    total=basePrices.fire*multiplier+workAreas*125+bathCount*75+extraCount*100;
   }
-  if(urgent.checked) total*=1.25;
-  return Math.max(basePrices[key],Math.round(total/5)*5);
+
+  if(urgent?.checked) total*=1.25;
+  return Math.max(basePrices[key]||0,Math.round(total/5)*5);
 }
 function updateCalculator(){
-  if(!service)return;
+  if(!service||!totalEl||!depositEl)return;
+  const key=service.value;
   const total=calculate();
   const deposit=Math.round(total*.30*100)/100;
-  totalEl.textContent=`$${total.toLocaleString()}`;
+  const isRestoration=["water","mold","fire"].includes(key);
+  totalEl.textContent=`$${total.toLocaleString()}${isRestoration?"+":""}`;
   depositEl.textContent=`$${deposit.toLocaleString()}`;
   const lang=currentLang();
   const message=lang==="es"
-    ? `Solicitud de estimación DOMZOR\nServicio: ${serviceLabels.es[service.value]}\nEstimación: $${total}\nAnticipo estimado 30%: $${deposit}\nTamaño: ${size.options[size.selectedIndex].text}\nHabitaciones/áreas: ${bedrooms.value}\nBaños: ${bathrooms.value}\nExtras: ${extras.value}\nEmergencia: ${urgent.checked?"Sí":"No"}\nEntiendo que el precio final requiere confirmación.`
-    : `DOMZOR estimate request\nService: ${serviceLabels.en[service.value]}\nEstimate: $${total}\nEstimated 30% deposit: $${deposit}\nSize: ${size.options[size.selectedIndex].text}\nBedrooms/work areas: ${bedrooms.value}\nBathrooms: ${bathrooms.value}\nExtras: ${extras.value}\nEmergency: ${urgent.checked?"Yes":"No"}\nI understand the final price requires confirmation.`;
-  whatsapp.href=`https://wa.me/13127784975?text=${encodeURIComponent(message)}`;
+    ? `Solicitud de estimación DOMZOR
+Servicio: ${serviceLabels.es[key]}
+Estimación desde: $${total}${isRestoration?" o más":""}
+Anticipo estimado 30%: $${deposit}
+Tamaño: ${size.options[size.selectedIndex].text}
+Habitaciones/áreas: ${bedrooms.value}
+Baños: ${bathrooms.value}
+Extras: ${extras.value}
+Emergencia: ${urgent.checked?"Sí":"No"}
+Entiendo que el precio final requiere confirmación.`
+    : `DOMZOR estimate request
+Service: ${serviceLabels.en[key]}
+Starting estimate: $${total}${isRestoration?" or more":""}
+Estimated 30% deposit: $${deposit}
+Size: ${size.options[size.selectedIndex].text}
+Bedrooms/work areas: ${bedrooms.value}
+Bathrooms: ${bathrooms.value}
+Extras: ${extras.value}
+Emergency: ${urgent.checked?"Yes":"No"}
+I understand the final price requires confirmation.`;
+  if(whatsapp) whatsapp.href=`https://wa.me/13127784975?text=${encodeURIComponent(message)}`;
 }
-[service,size,bedrooms,bathrooms,extras,urgent].forEach(el=>el?.addEventListener("input",updateCalculator));
+[service,size,bedrooms,bathrooms,extras,urgent].forEach(el=>{
+  el?.addEventListener("input",updateCalculator);
+  el?.addEventListener("change",updateCalculator);
+});
 updateCalculator();
 
 

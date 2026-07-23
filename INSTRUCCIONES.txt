@@ -1,10 +1,26 @@
-DOMZOR — BOTÓN DE WHATSAPP
+DOMZOR — CORRECCIÓN ÚNICAMENTE DE PRECIOS
 
-Sube estos dos archivos a la RAÍZ del repositorio:
-1. style.css — reemplaza el archivo actual.
-2. whatsapp-icon.svg — archivo nuevo.
+Este paquete contiene solamente pricing.js.
+No modifica diseño, textos, páginas, menú, imágenes ni ninguna otra función.
 
-No cambies index.html. El enlace existente seguirá abriendo:
-https://wa.me/13127784975
+Precios base configurados:
+- Limpieza residencial: $120
+- Limpieza comercial: $250
+- Entrada / salida: $300
+- Tapicería: $150
+- Alfombras: $180
+- Ventanas: $100
+- Restauración por agua: $1,200+
+- Remediación de moho: $1,500+
+- Restauración por fuego y humo: $1,000+
 
-Después de hacer Commit changes, espera 1–2 minutos y recarga domzor.com.
+El anticipo se calcula automáticamente al 30%.
+Ejemplo: fuego y humo $1,000+ = anticipo de $300.
+
+SUBIDA:
+1. En GitHub, abre el repositorio Domzor.com.
+2. Add file > Upload files.
+3. Sube solamente pricing.js.
+4. Permite reemplazar el archivo existente.
+5. Commit directly to main > Commit changes.
+6. Espera 1–3 minutos y actualiza pricing.html.
