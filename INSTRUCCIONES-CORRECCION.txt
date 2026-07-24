@@ -1,26 +1,34 @@
-DOMZOR V3 CORREGIDO — PORTADA ORIGINAL CONSERVADA
+DOMZOR — CORRECCIÓN COMPLETA DE PRECIOS Y RESERVAS
 
-ESTE PAQUETE:
-- Restaura la página principal con el diseño original.
-- No agrega secciones nuevas dentro de la portada.
-- Conserva logo, imagen principal, menú hamburguesa, textos, servicios, galería,
-  reseñas, formulario y botones tal como estaban.
-- Cambia solamente el botón flotante de WhatsApp para mostrar el logotipo.
-- Agrega enlaces dentro del menú móvil a páginas separadas:
-  Emergency, Photos & Reviews, Portals, Tracking y Legal.
-- Conserva todas las páginas adicionales ya creadas.
+REEMPLAZA ÚNICAMENTE ESTOS ARCHIVOS EN GITHUB:
+1. pricing.js
+2. pricing.html
+3. terms.js
+4. legal-terms.html
+5. service-worker.js
 
-CÓMO SUBIR:
-1. Descomprime este ZIP.
-2. En GitHub abre el repositorio Domzor.com.
-3. Pulsa Add file > Upload files.
-4. Selecciona TODOS los archivos y carpetas internos.
-5. Permite reemplazar archivos existentes.
-6. Commit directly to main.
-7. Pulsa Commit changes.
-8. Espera 1–3 minutos y abre https://domzor.com
+CORRECCIONES:
+- Los precios cambian inmediatamente al seleccionar cada servicio.
+- Se agregaron eventos CHANGE e INPUT para celulares y computadoras.
+- Restauración por agua: desde $1,200.
+- Remediación de moho: desde $1,500.
+- Restauración por fuego y humo: desde $1,000.
+- Respuesta de emergencia suma exactamente $250 al total.
+- El anticipo se recalcula automáticamente al 30%.
+- La aceptación de términos queda guardada correctamente.
+- Al aceptar los términos, vuelve a pricing.html#booking.
+- La casilla de aceptación se habilita automáticamente.
+- Los textos del bloque de términos cambian entre inglés y español.
+- Se actualizó el Service Worker para evitar que el navegador siga mostrando archivos antiguos.
 
-IMPORTANTE:
-- No subas el ZIP directamente.
-- La portada debe seguir viéndose como antes.
-- Los portales, pagos, cargas reales y seguimiento necesitan backend antes de uso real.
+PRUEBAS DESPUÉS DE SUBIR:
+1. Abre domzor.com/pricing.html en una pestaña privada.
+2. Selecciona fuego y humo: debe mostrar $1,000 y $300.
+3. Marca emergencia: debe mostrar $1,250 y $375.
+4. Selecciona moho: debe mostrar $1,500 y $450.
+5. Marca emergencia: debe mostrar $1,750 y $525.
+6. Acepta términos y confirma que regresa a la reserva con la casilla habilitada.
+
+NOTA:
+Después del Commit, espera 1–3 minutos. Si todavía aparece la versión anterior,
+cierra todas las pestañas de domzor.com y abre una pestaña privada.

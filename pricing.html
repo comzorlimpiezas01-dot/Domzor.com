@@ -13,7 +13,7 @@
   <link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
   <link href="style.css" rel="stylesheet"/>
   <link href="pricing.css" rel="stylesheet"/>
-  <script defer="" src="pricing.js">
+  <script defer="" src="pricing.js?v=20260724-2">
   </script>
   <link href="bilingual.css" rel="stylesheet"/>
   <script defer="True" src="bilingual.js">
@@ -455,14 +455,14 @@
       </label>
       <div class="terms-gate full" id="terms-gate">
        <p>
-        <strong>
+        <strong data-i18n="termsRequired">
          Terms acceptance required
         </strong>
        </p>
-       <p>
+       <p data-i18n="termsInstructions">
         Before requesting an appointment, review and electronically accept the Service Terms &amp; Conditions.
        </p>
-       <a class="btn btn-secondary" href="legal-terms.html">
+       <a class="btn btn-secondary" data-i18n="reviewTerms" href="legal-terms.html?return=pricing.html%23booking">
         Review and Accept Terms
        </a>
        <p class="terms-accepted-message" hidden="" id="terms-accepted-message">
@@ -470,7 +470,7 @@
       </div>
       <label class="check-row full">
        <input disabled="" id="booking-policy-consent" required="" type="checkbox"/>
-       <span>
+       <span data-i18n="termsConfirmation">
         I confirm that I accepted the current Service Terms &amp; Conditions and understand that the appointment requires DOMZOR's written confirmation.
        </span>
       </label>
