@@ -53,8 +53,8 @@
       <h2 data-en="Share a completed project or customer experience" data-es="Comparte un proyecto terminado o tu experiencia como cliente">
        Share a completed project or customer experience
       </h2>
-      <p class="feature-status status-setup" data-en="Secure storage setup required before public launch" data-es="Se requiere almacenamiento seguro antes del lanzamiento p&uacute;blico">
-       Secure storage setup required before public launch
+      <p class="feature-status" data-en="Secure photo upload and review moderation" data-es="Carga segura de fotos y moderación de reseñas">
+       Secure photo upload and review moderation
       </p>
      </div>
      <form class="upload-panel" id="community-form">
@@ -63,7 +63,7 @@
         <span data-en="Name" data-es="Nombre">
          Name
         </span>
-        <input name="name" required=""/>
+        <input name="customer_name" required=""/>
        </label>
        <label>
         <span data-en="Email" data-es="Correo electr&oacute;nico">
@@ -81,7 +81,7 @@
         <span data-en="Project type" data-es="Tipo de proyecto">
          Project type
         </span>
-        <select name="type">
+        <select name="service_type">
          <option data-en="Residential Cleaning" data-es="Limpieza residencial">
           Residential Cleaning
          </option>
@@ -103,28 +103,38 @@
         <span data-en="Before photo" data-es="Foto del antes">
          Before photo
         </span>
-        <input accept="image/*" name="before" type="file"/>
+        <input accept="image/*" name="before_photo" type="file"/>
        </label>
        <label>
         <span data-en="After photo" data-es="Foto del despu&eacute;s">
          After photo
         </span>
-        <input accept="image/*" name="after" type="file"/>
+        <input accept="image/*" name="after_photo" type="file"/>
+       </label>
+       <label>
+        <span data-en="Rating" data-es="Calificación">Rating</span>
+        <select name="rating" required="">
+         <option value="5">5 ★★★★★</option>
+         <option value="4">4 ★★★★☆</option>
+         <option value="3">3 ★★★☆☆</option>
+         <option value="2">2 ★★☆☆☆</option>
+         <option value="1">1 ★☆☆☆☆</option>
+        </select>
        </label>
        <label class="full">
         <span data-en="Review" data-es="Rese&ntilde;a">
          Review
         </span>
-        <textarea name="review" rows="5"></textarea>
+        <textarea name="comment" required="" rows="5"></textarea>
        </label>
        <label class="full">
-        <input required="" type="checkbox"/>
+        <input name="consent" required="" type="checkbox"/>
         <span data-en="I authorize DOMZOR to review this submission. Public marketing use requires separate approval." data-es="Autorizo a DOMZOR a revisar este env&iacute;o. El uso publicitario requiere una autorizaci&oacute;n separada.">
          I authorize DOMZOR to review this submission. Public marketing use requires separate approval.
         </span>
        </label>
-       <button class="btn btn-primary full" data-en="Prepare Submission" data-es="Preparar env&iacute;o" type="submit">
-        Prepare Submission
+       <button class="btn btn-primary full" data-en="Submit for review" data-es="Enviar para revisión" type="submit">
+        Submit for review
        </button>
        <p class="full" id="community-status">
        </p>
@@ -150,8 +160,9 @@
     </p>
    </div>
   </footer>
-  <script>
-   document.querySelector("#year").textContent=new Date().getFullYear();document.querySelector('#community-form')?.addEventListener('submit',e=>{e.preventDefault();document.querySelector('#community-status').textContent='The form is ready. Secure uploads will activate after Supabase storage is connected.';});
-  </script>
+  <script>document.querySelector("#year").textContent=new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+  <script src="community.js"></script>
  </body>
 </html>

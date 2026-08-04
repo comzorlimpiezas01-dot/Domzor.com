@@ -1,3 +1,3 @@
-// DOMZOR Supabase Configuratio
+// DOMZOR Supabase Configuration
 window.DOMZOR_SUPABASE_URL = "https://yvnblhvyqjlqwbrnublg.supabase.co";
-window.DOMZOR_SUPABASE_ANON_KEY = "sb_publishable_Zg4Gu1B7VDis2rKeio5Wqg_jmq_...";
+window.DOMZOR_SUPABASE_ANON_KEY = "PASTE_FULL_SUPABASE_PUBLISHABLE_KEY_HERE";

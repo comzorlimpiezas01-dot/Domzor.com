@@ -1,6 +1,12 @@
 (() => {
-  const configured = window.DOMZOR_SUPABASE_URL && !window.DOMZOR_SUPABASE_URL.startsWith("PASTE_") && window.DOMZOR_SUPABASE_ANON_KEY && !window.DOMZOR_SUPABASE_ANON_KEY.startsWith("PASTE_");
+  const configured = window.DOMZOR_SUPABASE_URL
+    && window.DOMZOR_SUPABASE_URL.startsWith("https://")
+    && window.DOMZOR_SUPABASE_ANON_KEY
+    && window.DOMZOR_SUPABASE_ANON_KEY.startsWith("sb_publishable_")
+    && !window.DOMZOR_SUPABASE_ANON_KEY.includes("...");
   if (!configured || !window.supabase) {
+    const status = document.querySelector("#community-status");
+    if (status) status.textContent = "Supabase configuration is incomplete. / La configuración de Supabase está incompleta.";
     console.info("DOMZOR community features are waiting for Supabase configuration.");
     return;
   }
@@ -48,6 +54,7 @@
         id: submissionId,
         customer_name: String(fd.get("customer_name") || "").trim(),
         email: String(fd.get("email") || "").trim().toLowerCase(),
+        phone: String(fd.get("phone") || "").trim() || null,
         service_type: String(fd.get("service_type") || ""),
         rating: Number(fd.get("rating")),
         comment: String(fd.get("comment") || "").trim(),
