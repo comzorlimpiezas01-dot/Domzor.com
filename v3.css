@@ -16,3 +16,23 @@
 .chat-launcher{position:fixed;left:20px;bottom:95px;z-index:1000}.chat-launcher a{display:flex;align-items:center;gap:8px;background:#fff;color:var(--v3-navy);padding:12px 15px;border-radius:999px;text-decoration:none;box-shadow:0 8px 28px rgba(0,0,0,.18);font-weight:800}
 @media(max-width:900px){.v3-grid,.before-after-grid{grid-template-columns:1fr 1fr}.portal-links{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.v3-grid,.before-after-grid,.upload-grid,.portal-grid,.portal-links{grid-template-columns:1fr}.upload-grid .full,.portal-grid .full{grid-column:auto}.emergency-banner .container{align-items:flex-start;flex-direction:column}.chat-launcher{left:12px;bottom:90px}.chat-launcher a{font-size:.82rem}}
+
+/* Community reviews and completed-project gallery */
+.community-reviews,.community-gallery{margin-top:24px}
+.community-empty{grid-column:1/-1;text-align:center;color:#526779;padding:20px}
+.review-reply{margin-top:14px;padding-top:12px;border-top:1px solid #dbe5ec;color:#29445a}
+.community-project{background:#fff}
+.community-photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:#e5edf3}
+.community-photo-pair>div{position:relative;background:#fff}
+.community-photo-pair span{position:absolute;left:10px;top:10px;z-index:1;background:rgba(7,55,99,.88);color:#fff;padding:5px 8px;border-radius:999px;font-size:.76rem;font-weight:800}
+.community-photo-pair img{display:block;width:100%;height:260px;object-fit:cover}
+#community-status{font-weight:700;color:#073763}
+#community-form button:disabled{opacity:.65;cursor:wait}
+@media(max-width:620px){.community-photo-pair{grid-template-columns:1fr}.community-photo-pair img{height:240px}}
+
+.google-review-box{max-width:760px;margin:28px auto 0;padding:24px;border:1px solid #dbe5ec;border-radius:20px;background:#fff;box-shadow:0 14px 38px rgba(7,55,99,.09);text-align:center}
+.google-review-box[hidden]{display:none}
+.google-review-box h3{margin:0 0 10px;color:#073763}
+.google-review-box p{margin:0 auto 16px;max-width:620px;color:#40586b}
+.google-review-btn{display:inline-flex;justify-content:center;min-width:220px}
+.google-review-note{margin-top:14px!important;font-size:.9rem;color:#667b8c!important}

@@ -1,0 +1,24 @@
+DOMZOR — FINAL COMMUNITY SETUP
+
+1. In Supabase > SQL Editor, paste and run the COMPLETE file: supabase-setup.sql
+2. Confirm the query ends without an error.
+3. Upload/replace these website files in GitHub:
+   - community.html
+   - community.js
+   - v3.css
+   - supabase-config.js
+4. Open https://domzor.com/community.html in a private/incognito browser window.
+5. Submit a test review with consent checked. Add before/after photos if desired.
+6. The success message must say: "Published successfully / Publicado correctamente".
+7. The new review must appear immediately under Customer Reviews / Reseñas de clientes.
+8. Uploaded project photos must appear under Completed Work / Trabajos realizados.
+
+IMPORTANT
+- Publication is automatic. There is no approval step for new submissions.
+- Consent text explicitly authorizes publication on the website.
+- Only JPG, PNG and WebP files up to 8 MB are accepted.
+- Public visitors can read only rows whose status is approved.
+- Admin controls remain available for later removal/rejection if an admin account is configured.
+
+GOOGLE REVIEWS
+After a review is published on DOMZOR, the customer sees a Publish on Google button. Google still requires the customer to confirm the review in their own Google account.

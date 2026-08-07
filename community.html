@@ -39,8 +39,8 @@
      <h1 data-en="Photos &amp; Reviews" data-es="Fotos y rese&ntilde;as">
       Photos &amp; Reviews
      </h1>
-     <p data-en="Submit project photos and feedback for DOMZOR review." data-es="Env&iacute;a fotograf&iacute;as del proyecto y comentarios para revisi&oacute;n de DOMZOR.">
-      Submit project photos and feedback for DOMZOR review.
+     <p data-en="Share your completed project, photos and customer experience with the DOMZOR community." data-es="Comparte tu proyecto terminado, fotos y experiencia con la comunidad de DOMZOR.">
+      Share your completed project, photos and customer experience with the DOMZOR community.
      </p>
     </div>
    </section>
@@ -53,8 +53,8 @@
       <h2 data-en="Share a completed project or customer experience" data-es="Comparte un proyecto terminado o tu experiencia como cliente">
        Share a completed project or customer experience
       </h2>
-      <p class="feature-status" data-en="Secure photo upload and review moderation" data-es="Carga segura de fotos y moderación de reseñas">
-       Secure photo upload and review moderation
+      <p class="feature-status" data-en="Secure photo upload and automatic publishing" data-es="Carga segura de fotos y publicación automática">
+       Secure photo upload and automatic publishing
       </p>
      </div>
      <form class="upload-panel" id="community-form">
@@ -129,17 +129,46 @@
        </label>
        <label class="full">
         <input name="consent" required="" type="checkbox"/>
-        <span data-en="I authorize DOMZOR to review this submission. Public marketing use requires separate approval." data-es="Autorizo a DOMZOR a revisar este env&iacute;o. El uso publicitario requiere una autorizaci&oacute;n separada.">
-         I authorize DOMZOR to review this submission. Public marketing use requires separate approval.
+        <span data-en="I authorize DOMZOR to publish my name, review, rating and submitted project photos on this website." data-es="Autorizo a DOMZOR a publicar mi nombre, rese&ntilde;a, calificaci&oacute;n y fotos del proyecto enviadas en este sitio web.">
+         I authorize DOMZOR to publish my name, review, rating and submitted project photos on this website.
         </span>
        </label>
-       <button class="btn btn-primary full" data-en="Submit for review" data-es="Enviar para revisión" type="submit">
-        Submit for review
+       <button class="btn btn-primary full" data-en="Publish review" data-es="Publicar reseña" type="submit">
+        Publish review
        </button>
        <p class="full" id="community-status">
        </p>
       </div>
      </form>
+     <aside class="google-review-box" id="google-review-box" hidden>
+      <h3 data-en="Thank you for your review" data-es="Gracias por tu reseña">Thank you for your review</h3>
+      <p data-en="Your review is already published on DOMZOR. Tap below to share it on Google too." data-es="Tu reseña ya está publicada en DOMZOR. Toca abajo para compartirla también en Google.">Your review is already published on DOMZOR. Tap below to share it on Google too.</p>
+      <a class="btn btn-primary google-review-btn" id="google-review-link" href="https://www.google.com/maps/search/?api=1&amp;query=DOMZOR%20Cleaning%20%26%20Restoration%20%28312%29%20778-4975" target="_blank" rel="noopener noreferrer" data-en="Publish on Google" data-es="Publicar en Google">Publish on Google</a>
+      <p class="google-review-note" data-en="Google requires the customer to confirm and publish the review from their own Google account." data-es="Google requiere que el cliente confirme y publique la reseña desde su propia cuenta de Google.">Google requires the customer to confirm and publish the review from their own Google account.</p>
+     </aside>
+    </div>
+   </section>
+
+   <section class="v3-section">
+    <div class="container">
+     <div class="v3-heading">
+      <p class="eyebrow green" data-en="Customer Reviews" data-es="Reseñas de clientes">Customer Reviews</p>
+      <h2 data-en="What customers say about DOMZOR" data-es="Lo que dicen los clientes de DOMZOR">What customers say about DOMZOR</h2>
+     </div>
+     <div class="testimonial-grid community-reviews" id="community-reviews" aria-live="polite">
+      <p class="community-empty">Loading reviews… / Cargando reseñas…</p>
+     </div>
+    </div>
+   </section>
+   <section class="v3-section v3-soft">
+    <div class="container">
+     <div class="v3-heading">
+      <p class="eyebrow green" data-en="Completed Work" data-es="Trabajos realizados">Completed Work</p>
+      <h2 data-en="Before &amp; after project gallery" data-es="Galería de proyectos antes y después">Before &amp; after project gallery</h2>
+     </div>
+     <div class="gallery-grid community-gallery" id="community-gallery" aria-live="polite">
+      <p class="community-empty">Loading projects… / Cargando proyectos…</p>
+     </div>
     </div>
    </section>
   </main>
