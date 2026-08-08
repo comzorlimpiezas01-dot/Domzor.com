@@ -1,197 +1,117 @@
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title data-en="DOMZOR | Photos &amp; Reviews" data-es="DOMZOR | Fotos y rese&ntilde;as">
-   DOMZOR | Photos &amp; Reviews
-  </title>
-  <meta content="#073763" name="theme-color"/>
-  <link href="favicon.svg" rel="icon" type="image/svg+xml"/>
-  <link href="style.css" rel="stylesheet"/>
-  <link href="v3.css" rel="stylesheet"/>
-  <link href="bilingual.css" rel="stylesheet"/>
-  <script defer="True" src="bilingual.js">
-  </script>
- </head>
- <body>
-  <header class="site-header">
-   <div class="container header-inner">
-    <a class="brand" href="index.html">
-     <img alt="DOMZOR" src="domzor-logo.svg"/>
-    </a>
-    <div class="header-actions">
-     <a class="phone-link" href="tel:+13127784975">
-      &phone; (312) 778-4975
-     </a>
-     <a class="btn btn-primary" data-en="Pricing" data-es="Precios" href="pricing.html">
-      Pricing
-     </a>
-    </div>
-   </div>
-  </header>
-  <main>
-   <section class="pricing-hero">
-    <div class="container pricing-hero-inner">
-     <p class="eyebrow" data-en="DOMZOR Cleaning &amp; Restoration" data-es="DOMZOR Limpieza y Restauraci&oacute;n">
-      DOMZOR Cleaning &amp; Restoration
-     </p>
-     <h1 data-en="Photos &amp; Reviews" data-es="Fotos y rese&ntilde;as">
-      Photos &amp; Reviews
-     </h1>
-     <p data-en="Share your completed project, photos and customer experience with the DOMZOR community." data-es="Comparte tu proyecto terminado, fotos y experiencia con la comunidad de DOMZOR.">
-      Share your completed project, photos and customer experience with the DOMZOR community.
-     </p>
-    </div>
-   </section>
-   <section class="v3-section v3-soft">
-    <div class="container">
-     <div class="v3-heading">
-      <p class="eyebrow green" data-en="Photos &amp; Reviews" data-es="Fotos y rese&ntilde;as">
-       Photos &amp; Reviews
-      </p>
-      <h2 data-en="Share a completed project or customer experience" data-es="Comparte un proyecto terminado o tu experiencia como cliente">
-       Share a completed project or customer experience
-      </h2>
-      <p class="feature-status" data-en="Secure photo upload and automatic publishing" data-es="Carga segura de fotos y publicación automática">
-       Secure photo upload and automatic publishing
-      </p>
-     </div>
-     <form class="upload-panel" id="community-form">
-      <div class="upload-grid">
-       <label>
-        <span data-en="Name" data-es="Nombre">
-         Name
-        </span>
-        <input name="customer_name" required=""/>
-       </label>
-       <label>
-        <span data-en="Email" data-es="Correo electr&oacute;nico">
-         Email
-        </span>
-        <input name="email" required="" type="email"/>
-       </label>
-       <label>
-        <span data-en="Phone" data-es="Tel&eacute;fono">
-         Phone
-        </span>
-        <input name="phone" type="tel"/>
-       </label>
-       <label>
-        <span data-en="Project type" data-es="Tipo de proyecto">
-         Project type
-        </span>
-        <select name="service_type">
-         <option data-en="Residential Cleaning" data-es="Limpieza residencial">
-          Residential Cleaning
-         </option>
-         <option data-en="Commercial Cleaning" data-es="Limpieza comercial">
-          Commercial Cleaning
-         </option>
-         <option data-en="Water Damage" data-es="Da&ntilde;os por agua">
-          Water Damage
-         </option>
-         <option data-en="Mold Remediation" data-es="Remediaci&oacute;n de moho">
-          Mold Remediation
-         </option>
-         <option data-en="Fire &amp; Smoke" data-es="Incendio y humo">
-          Fire &amp; Smoke
-         </option>
-        </select>
-       </label>
-       <label>
-        <span data-en="Before photo" data-es="Foto del antes">
-         Before photo
-        </span>
-        <input accept="image/*" name="before_photo" type="file"/>
-       </label>
-       <label>
-        <span data-en="After photo" data-es="Foto del despu&eacute;s">
-         After photo
-        </span>
-        <input accept="image/*" name="after_photo" type="file"/>
-       </label>
-       <label>
-        <span data-en="Rating" data-es="Calificación">Rating</span>
-        <select name="rating" required="">
-         <option value="5">5 ★★★★★</option>
-         <option value="4">4 ★★★★☆</option>
-         <option value="3">3 ★★★☆☆</option>
-         <option value="2">2 ★★☆☆☆</option>
-         <option value="1">1 ★☆☆☆☆</option>
-        </select>
-       </label>
-       <label class="full">
-        <span data-en="Review" data-es="Rese&ntilde;a">
-         Review
-        </span>
-        <textarea name="comment" required="" rows="5"></textarea>
-       </label>
-       <label class="full">
-        <input name="consent" required="" type="checkbox"/>
-        <span data-en="I authorize DOMZOR to publish my name, review, rating and submitted project photos on this website." data-es="Autorizo a DOMZOR a publicar mi nombre, rese&ntilde;a, calificaci&oacute;n y fotos del proyecto enviadas en este sitio web.">
-         I authorize DOMZOR to publish my name, review, rating and submitted project photos on this website.
-        </span>
-       </label>
-       <button class="btn btn-primary full" data-en="Publish review" data-es="Publicar reseña" type="submit">
-        Publish review
-       </button>
-       <p class="full" id="community-status">
-       </p>
-      </div>
-     </form>
-     <aside class="google-review-box" id="google-review-box" hidden>
-      <h3 data-en="Thank you for your review" data-es="Gracias por tu reseña">Thank you for your review</h3>
-      <p data-en="Your review is already published on DOMZOR. Tap below to share it on Google too." data-es="Tu reseña ya está publicada en DOMZOR. Toca abajo para compartirla también en Google.">Your review is already published on DOMZOR. Tap below to share it on Google too.</p>
-      <a class="btn btn-primary google-review-btn" id="google-review-link" href="https://www.google.com/maps/search/?api=1&amp;query=DOMZOR%20Cleaning%20%26%20Restoration%20%28312%29%20778-4975" target="_blank" rel="noopener noreferrer" data-en="Publish on Google" data-es="Publicar en Google">Publish on Google</a>
-      <p class="google-review-note" data-en="Google requires the customer to confirm and publish the review from their own Google account." data-es="Google requiere que el cliente confirme y publique la reseña desde su propia cuenta de Google.">Google requires the customer to confirm and publish the review from their own Google account.</p>
-     </aside>
-    </div>
-   </section>
-
-   <section class="v3-section">
-    <div class="container">
-     <div class="v3-heading">
-      <p class="eyebrow green" data-en="Customer Reviews" data-es="Reseñas de clientes">Customer Reviews</p>
-      <h2 data-en="What customers say about DOMZOR" data-es="Lo que dicen los clientes de DOMZOR">What customers say about DOMZOR</h2>
-     </div>
-     <div class="testimonial-grid community-reviews" id="community-reviews" aria-live="polite">
-      <p class="community-empty">Loading reviews… / Cargando reseñas…</p>
-     </div>
-    </div>
-   </section>
-   <section class="v3-section v3-soft">
-    <div class="container">
-     <div class="v3-heading">
-      <p class="eyebrow green" data-en="Completed Work" data-es="Trabajos realizados">Completed Work</p>
-      <h2 data-en="Before &amp; after project gallery" data-es="Galería de proyectos antes y después">Before &amp; after project gallery</h2>
-     </div>
-     <div class="gallery-grid community-gallery" id="community-gallery" aria-live="polite">
-      <p class="community-empty">Loading projects… / Cargando proyectos…</p>
-     </div>
-    </div>
-   </section>
-  </main>
-  <footer class="site-footer">
-   <div class="container footer-bottom">
-    <p>
-     &copy;
-     <span id="year">
-     </span>
-     <span data-en="DOMZOR Cleaning &amp; Restoration." data-es="DOMZOR Limpieza y Restauraci&oacute;n.">
-      DOMZOR Cleaning &amp; Restoration.
-     </span>
-    </p>
-    <p>
-     <a data-en="Legal Center" data-es="Centro legal" href="legal-center.html">
-      Legal Center
-     </a>
-    </p>
-   </div>
-  </footer>
-  <script>document.querySelector("#year").textContent=new Date().getFullYear();</script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#073763">
+  <meta name="description" content="DOMZOR project photos and customer reviews. Submit photos and feedback for review.">
+  <title>DOMZOR | Photos & Reviews</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .community-page{background:#f5f8fb;min-height:70vh;padding:48px 0 72px}
+    .community-shell{max-width:980px;margin:0 auto}
+    .community-card{background:#fff;border:1px solid #dfe7ef;border-radius:18px;padding:24px;box-shadow:0 16px 44px rgba(4,40,74,.10);margin-bottom:24px}
+    .community-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .community-grid .full{grid-column:1/-1}
+    .community-grid label{display:flex;flex-direction:column;gap:7px;font-weight:700;color:#132238}
+    .community-grid input,.community-grid select,.community-grid textarea{width:100%;box-sizing:border-box;padding:12px;border:1px solid #cfd9e4;border-radius:10px;font:inherit;background:#fff}
+    .community-grid input[type="checkbox"]{width:auto}
+    .consent-row{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:10px!important;font-weight:500!important}
+    .community-status{margin-top:14px;font-weight:700}
+    .community-status.error{color:#a61b1b}
+    .community-status.success{color:#176b2c}
+    .approved-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .approved-card{background:#fff;border:1px solid #dfe7ef;border-radius:14px;padding:16px}
+    .approved-card img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;margin-bottom:10px}
+    .approved-card .stars{letter-spacing:2px;color:#e4a300}
+    .lang-inline{display:flex;gap:10px;justify-content:flex-end;margin-bottom:18px}
+    .lang-inline button{border:1px solid #cfd9e4;border-radius:9px;padding:9px 14px;background:#fff;font-weight:700}
+    .lang-inline button[aria-pressed="true"]{background:#073763;color:#fff}
+    @media(max-width:760px){.community-grid,.approved-grid{grid-template-columns:1fr}.community-grid .full{grid-column:auto}.community-card{padding:18px}.community-page{padding-top:28px}}
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="supabase-config.js"></script>
-  <script src="community.js"></script>
- </body>
+  <script defer src="supabase-config.js"></script>
+  <script defer src="community.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="DOMZOR home">
+        <img src="domzor-logo.svg" alt="DOMZOR Cleaning & Restoration">
+      </a>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+13127784975">(312) 778-4975</a>
+        <a class="btn btn-primary" href="index.html">Home / Inicio</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="community-page">
+    <div class="container community-shell">
+      <div class="lang-inline" aria-label="Language selector">
+        <button type="button" data-community-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-community-lang="es" aria-pressed="false">ES</button>
+      </div>
+
+      <section class="community-card">
+        <p class="eyebrow green" data-en="Photos & Reviews" data-es="Fotos y reseñas">Photos & Reviews</p>
+        <h1 data-en="Share a completed project or your customer experience" data-es="Comparte un proyecto terminado o tu experiencia como cliente">Share a completed project or your customer experience</h1>
+        <p data-en="Submit project photos and feedback for DOMZOR review. Approved submissions may appear below." data-es="Envía fotografías del proyecto y comentarios para revisión de DOMZOR. Los envíos aprobados pueden aparecer abajo.">Submit project photos and feedback for DOMZOR review. Approved submissions may appear below.</p>
+      </section>
+
+      <section class="community-card" aria-labelledby="submit-title">
+        <h2 id="submit-title" data-en="Submit photos or a review" data-es="Enviar fotos o una reseña">Submit photos or a review</h2>
+        <form id="community-form" novalidate>
+          <div class="community-grid">
+            <label><span data-en="Name" data-es="Nombre">Name</span><input name="customer_name" autocomplete="name" maxlength="80" required></label>
+            <label><span data-en="Email" data-es="Correo electrónico">Email</span><input name="email" type="email" autocomplete="email" required></label>
+            <label><span data-en="Phone (optional)" data-es="Teléfono (opcional)">Phone (optional)</span><input name="phone" type="tel" autocomplete="tel" maxlength="30"></label>
+            <label><span data-en="Service" data-es="Servicio">Service</span>
+              <select name="service_type" required>
+                <option value="">Select / Seleccionar</option>
+                <option>House Cleaning</option>
+                <option>Deep Cleaning</option>
+                <option>Move In / Move Out</option>
+                <option>Commercial Cleaning</option>
+                <option>Water Damage Restoration</option>
+                <option>Mold Remediation</option>
+                <option>Fire & Smoke Restoration</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label><span data-en="Before photo (optional)" data-es="Foto del antes (opcional)">Before photo (optional)</span><input name="before_photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
+            <label><span data-en="After photo (optional)" data-es="Foto del después (opcional)">After photo (optional)</span><input name="after_photo" type="file" accept="image/jpeg,image/png,image/webp"></label>
+            <label><span data-en="Rating" data-es="Calificación">Rating</span>
+              <select name="rating" required>
+                <option value="5">5 ★★★★★</option>
+                <option value="4">4 ★★★★☆</option>
+                <option value="3">3 ★★★☆☆</option>
+                <option value="2">2 ★★☆☆☆</option>
+                <option value="1">1 ★☆☆☆☆</option>
+              </select>
+            </label>
+            <label class="full"><span data-en="Review" data-es="Reseña">Review</span><textarea name="comment" rows="5" minlength="3" maxlength="1000" required></textarea></label>
+            <label class="full consent-row"><input name="consent" type="checkbox" required><span data-en="I authorize DOMZOR to review this submission. Public advertising or marketing use requires separate authorization." data-es="Autorizo a DOMZOR a revisar este envío. El uso publicitario o de marketing requiere una autorización separada.">I authorize DOMZOR to review this submission. Public advertising or marketing use requires separate authorization.</span></label>
+          </div>
+          <button class="btn btn-primary btn-large" type="submit" data-en="Submit for review" data-es="Enviar para revisión">Submit for review</button>
+          <p id="community-status" class="community-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="community-card" aria-labelledby="approved-title">
+        <h2 id="approved-title" data-en="Approved customer projects & reviews" data-es="Proyectos y reseñas aprobados">Approved customer projects & reviews</h2>
+        <div id="community-approved" class="approved-grid"></div>
+        <p id="approved-empty" hidden data-en="No approved submissions are available yet." data-es="Todavía no hay publicaciones aprobadas.">No approved submissions are available yet.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <p>© <span id="community-year"></span> DOMZOR Cleaning & Restoration.</p>
+      <p><a href="index.html">Home / Inicio</a></p>
+    </div>
+  </footer>
+</body>
 </html>
